@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://www.opengiscrm.com/</loc>
+  <lastmod>2021-11-19T05:03:57+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.opengiscrm.com/blog</loc>
+  <lastmod>2021-11-19T05:03:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.opengiscrm.com/cursos</loc>
+  <lastmod>2021-11-19T05:03:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.opengiscrm.com/tutoriales</loc>
+  <lastmod>2021-11-19T05:03:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.opengiscrm.com/services</loc>
+  <lastmod>2021-11-19T05:03:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.opengiscrm.com/servicios</loc>
+  <lastmod>2021-11-19T05:03:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.opengiscrm.com/codes</loc>
+  <lastmod>2021-11-19T05:03:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.opengiscrm.com/portfolio</loc>
+  <lastmod>2021-11-19T05:03:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.opengiscrm.com/about</loc>
+  <lastmod>2021-11-19T05:03:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.opengiscrm.com/sobre-open-gis-crm</loc>
+  <lastmod>2021-11-19T05:03:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.opengiscrm.com/contact</loc>
+  <lastmod>2021-11-19T05:03:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.opengiscrm.com/contacto</loc>
+  <lastmod>2021-11-19T05:03:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.opengiscrm.com/codeigniter-4-forms</loc>
+  <lastmod>2021-11-19T05:03:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.opengiscrm.com/codeigniter-4-auth</loc>
+  <lastmod>2021-11-19T05:03:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.opengiscrm.com/codeigniter-4-deployment</loc>
+  <lastmod>2021-11-19T05:03:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.opengiscrm.com/factory-laravel-8</loc>
+  <lastmod>2021-11-19T05:03:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.opengiscrm.com/stripe-payment-gateway-integration</loc>
+  <lastmod>2021-11-19T05:03:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.opengiscrm.com/codeigniter4-restful-api</loc>
+  <lastmod>2021-11-19T05:03:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.opengiscrm.com/how-to-block-adblock</loc>
+  <lastmod>2021-11-19T05:03:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.opengiscrm.com/how-to-create-map-leaflet</loc>
+  <lastmod>2021-11-19T05:03:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.opengiscrm.com/codeigniter-4-tutorial</loc>
+  <lastmod>2021-11-19T05:03:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.opengiscrm.com/codeigniter4-de-0-al-limite</loc>
+  <lastmod>2021-11-19T05:03:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.opengiscrm.com/symfony5-de-0-al-limite</loc>
+  <lastmod>2021-11-19T05:03:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.opengiscrm.com/error-pages-symfony5</loc>
+  <lastmod>2021-11-19T05:03:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.opengiscrm.com/codeigniter-4-controllers</loc>
+  <lastmod>2021-11-19T05:03:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.opengiscrm.com/codeigniter-3-config-class</loc>
+  <lastmod>2021-11-19T05:03:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.opengiscrm.com/yii-2-crud</loc>
+  <lastmod>2021-11-19T05:03:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.opengiscrm.com/fixtures-bundle-symfony5</loc>
+  <lastmod>2021-11-19T05:03:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.opengiscrm.com/symfony-doctrine-orm</loc>
+  <lastmod>2021-11-19T05:03:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.opengiscrm.com/twig-symfony</loc>
+  <lastmod>2021-11-19T05:03:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.opengiscrm.com/blog/postgresql-de-0-al-limite</loc>
+  <lastmod>2021-11-19T05:03:57+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.opengiscrm.com/blog/codeigniter-4-rest</loc>
+  <lastmod>2021-11-19T05:03:57+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.opengiscrm.com/blog/codeigniter-4-deploy-heroku</loc>
+  <lastmod>2021-11-19T05:03:57+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.opengiscrm.com/blog/symfony-vista-404</loc>
+  <lastmod>2021-11-19T05:03:57+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.opengiscrm.com/blog/fixtures-symfony</loc>
+  <lastmod>2021-11-19T05:03:57+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.opengiscrm.com/blog/twig-symfony</loc>
+  <lastmod>2021-11-19T05:03:57+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.opengiscrm.com/blog/symfony-mailer-enviar-emails</loc>
+  <lastmod>2021-11-19T05:03:57+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.opengiscrm.com/cursos/master-en-frameworks-php</loc>
+  <lastmod>2021-11-19T05:03:57+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.opengiscrm.com/cursos/symfony-5-de-0-al-limite</loc>
+  <lastmod>2021-11-19T05:03:57+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.opengiscrm.com/cursos/codeigniter-4-de-0-al-limite</loc>
+  <lastmod>2021-11-19T05:03:57+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.opengiscrm.com/cursos/postgresql-de-0-al-limite</loc>
+  <lastmod>2021-11-19T05:03:57+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.opengiscrm.com/cursos/codeigniter-3-de-0-al-limite</loc>
+  <lastmod>2021-11-19T05:03:57+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.opengiscrm.com/cursos/git-de-0-al-limite</loc>
+  <lastmod>2021-11-19T05:03:57+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.opengiscrm.com/cursos/yii-2-de-0-al-limite</loc>
+  <lastmod>2021-11-19T05:03:57+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.opengiscrm.com/cursos/cakephp-4-de-0-al-limite</loc>
+  <lastmod>2021-11-19T05:03:57+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.opengiscrm.com/cursos/laravel-8-de-0-al-limite</loc>
+  <lastmod>2021-11-19T05:03:57+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.opengiscrm.com/tutoriales/codeigniter-4-tutorial</loc>
+  <lastmod>2021-11-19T05:03:57+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.opengiscrm.com/tutoriales/codeigniter-3-tutorial</loc>
+  <lastmod>2021-11-19T05:03:57+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.opengiscrm.com/tutoriales/symfony-5-tutorial</loc>
+  <lastmod>2021-11-19T05:03:57+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.opengiscrm.com/tutoriales/postgresql-13-tutorial</loc>
+  <lastmod>2021-11-19T05:03:57+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.opengiscrm.com/tutoriales/laravel-8-tutorial</loc>
+  <lastmod>2021-11-19T05:03:57+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.opengiscrm.com/tutoriales/github-tutorial</loc>
+  <lastmod>2021-11-19T05:03:57+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>

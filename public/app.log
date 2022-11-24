@@ -1,0 +1,164 @@
+[2022-11-18 20:48 America/Chicago] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 20
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate
+[2022-11-18 20:48 America/Chicago] HTTP response of validation request: HTTP/1.1 403 Forbidden
+Connection: close
+Content-Length: 419
+Server: Varnish
+Retry-After: 0
+Content-Type: text/html
+Accept-Ranges: bytes
+Via: 1.1 varnish, 1.1 varnish
+Date: Sat, 19 Nov 2022 02:48:13 GMT
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Served-By: cache-iad-kiad7000070-IAD, cache-mia11387-MIA
+X-Cache: MISS, MISS
+X-Cache-Hits: 0, 0
+X-Timer: S1668826094.755770,VS0,VE25
+Set-Cookie: x-cdn=fastly:MIA; Domain=paypal.com; Path=/; Secure
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Paypal Error</title>
+</head>
+<body>
+<h1>Access Denied.</h1>
+<p>You don't have permission to access "/cgi-bin/webscr" on this server.
+<br/>
+<p>Reference #16688260942aa5ed56103afa104c774
+<br/>
+<p> Timestamp: 1668826094
+</body>
+</html>
+
+[2022-11-18 20:50 America/Chicago] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 20
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate
+[2022-11-18 20:50 America/Chicago] HTTP response of validation request: HTTP/1.1 403 Forbidden
+Connection: close
+Content-Length: 419
+Server: Varnish
+Retry-After: 0
+Content-Type: text/html
+Accept-Ranges: bytes
+Via: 1.1 varnish, 1.1 varnish
+Date: Sat, 19 Nov 2022 02:50:35 GMT
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Served-By: cache-iad-kjyo7100175-IAD, cache-mia11362-MIA
+X-Cache: MISS, MISS
+X-Cache-Hits: 0, 0
+X-Timer: S1668826235.112724,VS0,VE28
+Set-Cookie: x-cdn=fastly:MIA; Domain=paypal.com; Path=/; Secure
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Paypal Error</title>
+</head>
+<body>
+<h1>Access Denied.</h1>
+<p>You don't have permission to access "/cgi-bin/webscr" on this server.
+<br/>
+<p>Reference #16688262350034fbe5b64fa261bc665
+<br/>
+<p> Timestamp: 1668826235
+</body>
+</html>
+
+[2022-11-18 20:54 America/Chicago] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 20
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate
+[2022-11-18 20:54 America/Chicago] HTTP response of validation request: HTTP/1.1 403 Forbidden
+Connection: close
+Content-Length: 419
+Server: Varnish
+Retry-After: 0
+Content-Type: text/html
+Accept-Ranges: bytes
+Via: 1.1 varnish, 1.1 varnish
+Date: Sat, 19 Nov 2022 02:54:15 GMT
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Served-By: cache-iad-kjyo7100023-IAD, cache-mia11389-MIA
+X-Cache: MISS, MISS
+X-Cache-Hits: 0, 0
+X-Timer: S1668826456.918525,VS0,VE27
+Set-Cookie: x-cdn=fastly:MIA; Domain=paypal.com; Path=/; Secure
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Paypal Error</title>
+</head>
+<body>
+<h1>Access Denied.</h1>
+<p>You don't have permission to access "/cgi-bin/webscr" on this server.
+<br/>
+<p>Reference #1668826456d9ca0e492c13f2a1bde90
+<br/>
+<p> Timestamp: 1668826456
+</body>
+</html>
+
+[2022-11-18 20:55 America/Chicago] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 20
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate
+[2022-11-18 20:55 America/Chicago] HTTP response of validation request: HTTP/1.1 403 Forbidden
+Connection: close
+Content-Length: 419
+Server: Varnish
+Retry-After: 0
+Content-Type: text/html
+Accept-Ranges: bytes
+Via: 1.1 varnish, 1.1 varnish
+Date: Sat, 19 Nov 2022 02:55:58 GMT
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Served-By: cache-iad-kiad7000087-IAD, cache-mia11358-MIA
+X-Cache: MISS, MISS
+X-Cache-Hits: 0, 0
+X-Timer: S1668826558.092645,VS0,VE28
+Set-Cookie: x-cdn=fastly:MIA; Domain=paypal.com; Path=/; Secure
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Paypal Error</title>
+</head>
+<body>
+<h1>Access Denied.</h1>
+<p>You don't have permission to access "/cgi-bin/webscr" on this server.
+<br/>
+<p>Reference #166882655857281c5d0b58bd3b0dd54
+<br/>
+<p> Timestamp: 1668826558
+</body>
+</html>
+
