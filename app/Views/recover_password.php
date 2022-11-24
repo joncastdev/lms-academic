@@ -21,7 +21,7 @@
 
 		<div class="col-md-6 offset-3">
 
-			<h1>Recover Password</h1>
+			<h1>Recuperar Contraseña</h1>
 
 			<div class="">
 

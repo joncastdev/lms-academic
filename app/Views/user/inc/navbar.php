@@ -2,7 +2,7 @@
 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
   <div class="navbar-header text-left">
-    <a class="navbar-brand">Online academy</a>
+    <a class="navbar-brand">Academia Online</a>
   </div>
 
 
@@ -18,7 +18,7 @@
 
    <li class="nav-item">
     <a class="nav-link" href="/courses">       
-     <span class="text-dark">Courses</span>
+     <span class="text-dark">Cursos</span>
    </a>
  </li>
 

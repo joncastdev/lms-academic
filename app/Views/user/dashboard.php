@@ -21,9 +21,9 @@
 			<h4 class="bg bg-success">
 
 				<p class="text-white">
-					Welcome: <?php echo $_SESSION['email']; ?>
+					Bienvenido: <?php echo $_SESSION['email']; ?>
 					<br>
-					The last Visit: <?php echo date('d-m-y'); ?>
+					Visitaste la academia en: <?php echo date('d-m-y'); ?>
 				</p>
 
 			</h4>
@@ -31,9 +31,9 @@
 			<?php if($session->get('id_statu') == 2): ?>
 				<div class="card-body">
 
-					<h1>Activate your account</h1>
+					<h1>Activa tu cuenta</h1>
 
-					<p>Activate your account with the verification email to access the courses</p>
+					<p>Activa tu cuenta con el email de verificación para acceder a los cursos</p>
 					<br>
 					<br>
 					<br>
@@ -62,9 +62,9 @@
 
 					<div class="container">
 
-						<h1>Your account is activated</h1>
+						<h1>Tu cuenta está activada</h1>
 
-						<p>Explore the course catalog</p>
+						<p>Explora el catálogo de cursos</p>
 						<br>
 						<br>
 						<br>

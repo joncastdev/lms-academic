@@ -19,7 +19,7 @@
 		<?php if($session->get('id_statu') == 2): ?>
 			<div class="card-body">
 
-				<h1>Activate your account</h1>
+				<h1>Activa tu cuenta</h1>
 
 			</div>
 		<?php endif; ?>
@@ -29,7 +29,7 @@
 		<?php if($courses_pensum): ?>
 		<div class="card-body">
 
-			<h1 class="bg-success text-white">Courses Class</h1>
+			<h1 class="bg-success text-white">Clases del Curso</h1>
 
 			<br>
 
@@ -49,7 +49,7 @@
 							<h2><?php echo $pensums->pensum; ?></h2>
 							<hr>
 
-							<a href="/videos/<?php echo $pensums->id_pensum; ?>" class="btn btn-success">View</a>
+							<a href="/videos/<?php echo $pensums->id_pensum; ?>" class="btn btn-success">Ver</a>
 
 
 							<?php endforeach ?>

@@ -2,8 +2,8 @@
 
 <?php echo $this->section('meta') ?>
 
-<link rel="canonical" href="https://programming-courses.laravel-developer.com/" />    
-<meta name="description" content="Find programming courses in the online academy">
+<link rel="canonical" href="https://cursos-de-programacion.opengiscrm.com/" />    
+<meta name="description" content="Encuentra cursos de programación en la academia online">
 
 <?php echo $this->endSection() ?>
 
@@ -18,29 +18,29 @@
 	<div class="row">
 		<div class="col-sm-12">			
 
-			<h1>Programming Courses</h1>
+			<h1>Cursos de Programación</h1>
 
-			<p>Learn with online courses from scratch at the most economical price</p>
+			<p>Aprende con cursos online desde cero al precio más económico</p>
 
-			<h2>How does the online academy work?</h2>
-			<p>By registering in the web school, you will get access to new published courses with various types of exercises</p>
+			<h2>¿Cómo funciona la academia en línea?</h2>
+			<p>Al registrarse en la escuela web, obtendrá acceso a los nuevos cursos publicados con varios tipos de ejercicios.</p>
 			<ul>
-				<li>Courses in video format</li>				   			
+				<li>Cursos en formato de video</li>				   			
 			</ul>
 
-			<h2>What's the price?</h2>
-			<p>The price of the courses is <b>10$</b> per course, with access to the course with current content and new updates</p>
+			<h2>¿Cual es el precio?</h2>
+			<p>El precio de los cursos es <b>10$</b> por curso, con acceso al curso con contenido actual y nuevas actualizaciones</p>
 
-			<h2>What are the payment methods?</h2>
-			<p>Currently only payments are accepted in the payment processor paypal</p>
+			<h2>¿Cuáles son los métodos de pago?</h2>
+			<p>Actualmente solo se aceptan pagos en el procesador de pagos paypal</p>
 
 
-			<h2>Refund system?</h2>
-			<p>No refunds are made, by making the purchase you agree to the service that will be provided</p>
+			<h2>¿Sistema de reembolso?</h2>
+			<p>No se realizan reembolsos, al realizar la compra usted acepta el servicio que se le brindará</p>
 
 
 			<br>
-		<h2>Available Courses:</h2>	
+		<h2>Cursos Disponibles:</h2>	
 
 		<div class="row">
 
@@ -52,18 +52,18 @@
 
 					<div class="card-header">
 
-						<h3>CodeIgniter 4 from scratch course</h3>
+						<h3>CodeIgniter 4 De Basico a Intermedio</h3>
 
 					</div>
 
 					<div class="card-body">
 						<br>					
 
-						<h4>Online Academy platform</h4>					
+						<h4>Academia Online</h4>					
 
 						<a class="btn btn-primary" href="/register">
 							<span class="fas fa-arrow-right"></span>		
-						Start today</a>
+						Empezar Hoy</a>
 
 					</div>
 
@@ -79,19 +79,19 @@
 
 					<div class="card-header">				
 
-						<h3>Symfony 6 from scratch course</h3>
+						<h3>Symfony 6 De Basico a Intermedio</h3>
 
 					</div>
 
 					<div class="card-body">
 						<br>					
 
-						<h4>Online Academy platform</h4>					
+						<h4>Academia Online</h4>					
 
 
 						<a class="btn btn-primary" href="/register">
 							<span class="fas fa-arrow-right"></span>		
-						Start today</a>
+						Empezar Hoy</a>
 
 					</div>
 

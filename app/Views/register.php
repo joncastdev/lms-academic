@@ -21,7 +21,7 @@
 
 		<div class="col-md-6 offset-3">
 
-			<h1>Register</h1>
+			<h1>Registrarse</h1>
 
 			<div class="">
 

@@ -19,9 +19,9 @@
 		<?php if($session->get('id_statu') == 2): ?>
 			<div class="card-body">
 
-				<h1>Activate your account</h1>
+				<h1>Activa tu cuenta</h1>
 
-				<p>Activate your account with the verification email to access the courses</p>
+				<p>Activa tu cuenta con el email de verificación para acceder a los cursos</p>
 				<br>
 				<br>
 				<br>
@@ -50,7 +50,7 @@
 		<?php if($session->get('id_statu') == 1): ?>
 			<div class="card-body">
 
-				<h1 class="bg-info text-white">Available Courses</h1>
+				<h1 class="bg-info text-white">Catalogo de Cursos</h1>
 				<br>
 
 				<div class="container">
@@ -63,7 +63,7 @@
 						<h2><?php echo $coursesb->price.'$'; ?></h2>
 						<br>
 
-						<a href="/checkout/<?php echo $coursesb->id_course; ?>" class="btn btn-info">Go to checkout</a>				
+						<a href="/checkout/<?php echo $coursesb->id_course; ?>" class="btn btn-info">Ir al checkout</a>				
 
 
 
@@ -82,7 +82,7 @@
 		<?php if($users_courses): ?>
 			<div class="card-body">
 
-				<h1 class="bg-success text-white">My course list</h1>
+				<h1 class="bg-success text-white">Lista de Cursos</h1>
 
 				<br>
 
@@ -95,7 +95,7 @@
 						<hr>
 						<br>					
 
-						<a href="/courses/<?php echo $courses->id_course; ?>" class="btn btn-success">Start the classes</a>
+						<a href="/courses/<?php echo $courses->id_course; ?>" class="btn btn-success">Empezar las Clases</a>
 
 
 					<?php endforeach ?>

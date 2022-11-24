@@ -92,13 +92,13 @@
 
 
        <div class="form-group">
-        <input type="email" class="form-control form-control-user" name="email" id="email"  placeholder="Email" value="<?php echo getenv('EMAIL_ADMIN'); ?>">
+        <input type="email" class="form-control form-control-user" name="email" id="email"  placeholder="Email" >
         <!-- <div class="text-danger"><?php //echo form_error('email');  ?></div> -->
         <!-- <div class="text-danger" id="msg_email"></div> -->
       </div>
 
       <div class="form-group">
-        <input type="password" class="form-control form-control-user" name="password" id="password"  placeholder="Password" value="Test1234">
+        <input type="password" class="form-control form-control-user" name="password" id="password"  placeholder="Password" >
         <!-- <div class="text-danger"><?php //echo form_error('email');  ?></div> -->
         <!-- <div class="text-danger" id="msg_password"></div> -->
       </div>      
@@ -111,10 +111,10 @@
       <?php echo form_close()  ?> 
 
       <a class="nav-link" href="/register">
-        <span class="mr-2 d-none d-lg-inline text-gray-600 small">You do not have an account?</span>             
+        <span class="mr-2 d-none d-lg-inline text-gray-600 small">¿No tienes una cuenta?</span>             
       </a>
        <a class="nav-link" href="/recover">
-        <span class="mr-2 d-none d-lg-inline text-gray-600 small">Do you need to recover your password?</span>             
+        <span class="mr-2 d-none d-lg-inline text-gray-600 small">¿Necesitas recuperar tu contraseña?</span>             
       </a>
 
       <!-- <div class="modal-footer">

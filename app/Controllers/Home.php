@@ -23,7 +23,7 @@ class Home extends BaseController
 
 	public function index()
 	{
-		$data['tittle'] = 'Programming Courses - Laravel Developer';
+		$data['tittle'] = 'Cursos de Programación - OpenGisCRM';
 
 		return view('home',$data);
 	}
