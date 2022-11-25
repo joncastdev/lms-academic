@@ -10,203 +10,288 @@ class PensumSeeder extends Seeder
 	{
 		$data = [
 			[			
-				'pensum' => 'Install',
-				'video' => '1)ci4_instalacion_en.mp4',
+				'pensum' => 'Herramientas',
+				'video' => '1)herramientashd.mp4',
 				'id_course' => 1									
 			],
 			[				
-				'pensum' => 'Controllers',
-				'video' => '2)ci4_controllers_en.mp4',
+				'pensum' => 'Servidor Local',
+				'video' => '2)levantarserverhd.mp4',
 				'id_course' => 1								
 			],
 			[				
-				'pensum' => 'Routes',
-				'video' => '3)ci4_routes_en.mp4',
+				'pensum' => 'Estructura',
+				'video' => '3)estructurahd.mp4',
 				'id_course' => 1								
 			],
 			[				
-				'pensum' => 'Create Controllers',
-				'video' => '4)ci4_newcontroller_en.mp4',
+				'pensum' => 'Metodos por Defecto',
+				'video' => '4)metododefectohd.mp4',
 				'id_course' => 1								
 			],
 			[				
-				'pensum' => 'ENV File',
-				'video' => '5)ci4_env_en.mp4',
+				'pensum' => 'Crear un Metodo',
+				'video' => '5)metodohd.mp4',
 				'id_course' => 1								
 			],
 			[				
-				'pensum' => 'Database Config',
-				'video' => '6)ci4_database_en.mp4',
+				'pensum' => 'Parametros',
+				'video' => '6)paramshd.mp4',
 				'id_course' => 1								
 			],
 			[				
-				'pensum' => 'Models',
-				'video' => '7)ci4_models_en.mp4',
+				'pensum' => 'Base de Datos',
+				'video' => '7)dbhd.mp4',
 				'id_course' => 1								
 			],
 			[				
-				'pensum' => 'Migrations',
-				'video' => '8)ci4_migrations_en.mp4',
+				'pensum' => 'Modelos',
+				'video' => '8)modelshd.mp4',
 				'id_course' => 1								
 			],
 			[				
-				'pensum' => 'Seeds Part 1',
-				'video' => '9)ci4_seed1_en.mp4',
+				'pensum' => 'Migraciones',
+				'video' => '9)migrationshd.mp4',
 				'id_course' => 1								
 			],
 			[				
-				'pensum' => 'Seeds Part 2',
-				'video' => '10)ci4_seed2_en.mp4',
+				'pensum' => 'Refrescar Migraciones',
+				'video' => '10)refreshhd.mp4',
 				'id_course' => 1								
 			],
 			[				
-				'pensum' => 'Layouts',
-				'video' => '11)ci4_layout_en.mp4',
+				'pensum' => 'Semillas',
+				'video' => '11)seedhd.mp4',
 				'id_course' => 1								
 			],
 			[				
-				'pensum' => 'Erros in PHP 8',
-				'video' => '12)ci4_errorphp8_en.mp4',
+				'pensum' => 'Resource',
+				'video' => '12)resourcehd.mp4',
 				'id_course' => 1								
 			],
 			[				
-				'pensum' => 'Index',
-				'video' => '13)ci4_indextable_en.mp4',
+				'pensum' => 'Resource Vistas',
+				'video' => '13)resourcevistashd.mp4',
 				'id_course' => 1								
 			],
 			[				
-				'pensum' => 'Resource Part 1',
-				'video' => '14)ci4_resource1_en.mp4',
+				'pensum' => 'Renderizar Vistas',
+				'video' => '14)renderhd.mp4',
 				'id_course' => 1								
 			],
 			[				
-				'pensum' => 'Resource Part 2',
-				'video' => '15)ci4_resource2_en.mp4',
+				'pensum' => 'Bootstrap Estilos',
+				'video' => '15)includeboostrap.mp4',
 				'id_course' => 1								
 			],
 			[				
-				'pensum' => 'Resource Part 3',
-				'video' => '16)ci4_resource3_en.mp4',
+				'pensum' => 'Metodo FindAll',
+				'video' => '16)findallhd.mp4',
 				'id_course' => 1								
 			],
 			[				
-				'pensum' => 'Resource Part 4',
-				'video' => '17)ci4_resource4_en.mp4',
+				'pensum' => 'Entidades',
+				'video' => '17)entitieshd.mp4',
 				'id_course' => 1								
 			],
 			[				
-				'pensum' => 'Get Post Method',
-				'video' => '18)ci4_getpost_en.mp4',
+				'pensum' => 'Tablas',
+				'video' => '18)tablehd.mp4',
 				'id_course' => 1								
 			],
 			[				
-				'pensum' => 'Model Insert',
-				'video' => '19)ci4_modelinsert_en.mp4',
+				'pensum' => 'Formularios',
+				'video' => '19)formhd.mp4',
 				'id_course' => 1								
 			],
 			[				
-				'pensum' => 'Validation',
-				'video' => '20)ci4_validback_en.mp4',
+				'pensum' => 'Insert con Entidades',
+				'video' => '20)insertentityhd.mp4',
 				'id_course' => 1								
 			],
 			[				
-				'pensum' => 'Flashdata',
-				'video' => '21)ci4_flashdata_en.mp4',
+				'pensum' => 'Delete Parte 1',
+				'video' => '21)delete1hd.mp4',
 				'id_course' => 1								
 			],
 			[				
-				'pensum' => 'Entity',
-				'video' => '22)ci4_entity_en.mp4',
+				'pensum' => 'Delete Parte 2',
+				'video' => '22)delete2hd.mp4',
 				'id_course' => 1								
 			],
 			[				
-				'pensum' => 'Edit',
-				'video' => '23)ci4_edit_en.mp4',
+				'pensum' => 'Redirect',
+				'video' => '23)redirecthd.mp4',
 				'id_course' => 1								
 			],
 			[				
-				'pensum' => 'Delete',
-				'video' => '24)ci4_delete_en.mp4',
+				'pensum' => 'Show Ejemplo',
+				'video' => '24)showhd.mp4',
 				'id_course' => 1								
 			],
 			[				
-				'pensum' => 'Reports PDF',
-				'video' => '25)ci4_pdf_en.mp4',
+				'pensum' => 'Ver Estilos',
+				'video' => '25)showverestiloshd.mp4',
 				'id_course' => 1								
 			],
 			[				
-				'pensum' => 'Login Part 1',
-				'video' => '26)ci4_login1_en.mp4',
+				'pensum' => 'Editar',
+				'video' => '26)edithd.mp4',
 				'id_course' => 1								
 			],
 			[				
-				'pensum' => 'Login Part 2',
-				'video' => '27)ci4_login2_en.mp4',
+				'pensum' => 'Actualizar',
+				'video' => '27)updatehd.mp4',
 				'id_course' => 1								
 			],
 			[				
-				'pensum' => 'Custom Middleware',
-				'video' => '28)ci4_midleware_en.mp4',
+				'pensum' => 'Validaciones Parte 1',
+				'video' => '28)validation1hd.mp4',
 				'id_course' => 1								
-			],			
+			],
+			[				
+				'pensum' => 'Validaciones Parte 2',
+				'video' => '29)validation2hd.mp4',
+				'id_course' => 1								
+			],
+			[				
+				'pensum' => 'Validaciones Parte 3',
+				'video' => '30)validation3hd.mp4',
+				'id_course' => 1								
+			],				
 			[			
-				'pensum' => 'Install',
-				'video' => '1)syminstallen.mp4',
+				'pensum' => 'Instalar',
+				'video' => '1)installsym6es.mp4',
 				'id_course' => 2									
 			],
 			[				
-				'pensum' => 'Controllers',
-				'video' => '2)symcontrolleren.mp4',
+				'pensum' => 'Estructura',
+				'video' => '2)estructurasym6es.mp4',
 				'id_course' => 2								
 			],
 			[				
-				'pensum' => 'Database Config',
-				'video' => '3)symdatabaseen.mp4',
+				'pensum' => 'Database Configurar',
+				'video' => '3)databasesym6es.mp4',
 				'id_course' => 2								
 			],
 			[				
-				'pensum' => 'Entity',
-				'video' => '4)symentitysen.mp4',
+				'pensum' => 'Auth Configurar',
+				'video' => '4)authsym6es.mp4',
 				'id_course' => 2								
 			],
 			[				
-				'pensum' => 'Migrations',
-				'video' => '5)symmigrationsen.mp4',
+				'pensum' => 'Fixtures Parte 1',
+				'video' => '5)fixtures1sym6es.mp4',
 				'id_course' => 2								
 			],
 			[				
-				'pensum' => 'CRUD Part 1',
-				'video' => '6)symcrud1en.mp4',
+				'pensum' => 'Fixtures Parte 2',
+				'video' => '6)fuxtures2sym6es.mp4',
 				'id_course' => 2								
 			],
 			[				
-				'pensum' => 'CRUD Part 2',
-				'video' => '7)symcrud2en.mp4',
+				'pensum' => 'CRUD Parte 1',
+				'video' => '7)crud1sym6es.mp4',
 				'id_course' => 2								
 			],
 			[				
-				'pensum' => 'Integrate Bootstrap',
-				'video' => '8)symboostrapen.mp4',
+				'pensum' => 'CRUD Parte 2',
+				'video' => '8)crud2sym6es.mp4',
 				'id_course' => 2								
 			],
 			[				
-				'pensum' => 'DataTables',
-				'video' => '9)symdatatablesen.mp4',
+				'pensum' => 'Auth Ejemplo',
+				'video' => '9)authsym6es.mp4',
 				'id_course' => 2								
 			],
 			[				
-				'pensum' => 'Auth Part 1',
-				'video' => '10)symauth1en.mp4',
+				'pensum' => 'Response',
+				'video' => '10)responsesym6es.mp4',
 				'id_course' => 2								
 			],
 			[				
-				'pensum' => 'Auth Part 2',
-				'video' => '11)symauth2.mp4',
+				'pensum' => 'CDN Estilos',
+				'video' => '11)cdnsym6es.mp4',
 				'id_course' => 2								
 			],
 			[				
-				'pensum' => 'Fixtures',
-				'video' => '12)symfixturesen.mp4',
+				'pensum' => 'WebPack Encore Parte 1',
+				'video' => '12)wepack1sym6es.mp4',
+				'id_course' => 2								
+			],
+			[				
+				'pensum' => 'WebPack Encore Parte 2',
+				'video' => '13)wepack2sym6es.mp4',
+				'id_course' => 2								
+			],
+			[				
+				'pensum' => 'Bootstrap Estilos',
+				'video' => '14)boostrapsym6es.mp4',
+				'id_course' => 2								
+			],
+			[				
+				'pensum' => 'EasyAdmin Configurar',
+				'video' => '15)easyadminsym6es.mp4',
+				'id_course' => 2								
+			],
+			[				
+				'pensum' => 'Entidades',
+				'video' => '16)entitysym6es.mp4',
+				'id_course' => 2								
+			],
+			[				
+				'pensum' => 'Setear Stripe',
+				'video' => '17)setsetripesym6es.mp4',
+				'id_course' => 2								
+			],
+			[				
+				'pensum' => 'Customers',
+				'video' => '18)customerssym6es.mp4',
+				'id_course' => 2								
+			],
+			[				
+				'pensum' => 'Listar Customers',
+				'video' => '19)listsym6.mp4',
+				'id_course' => 2								
+			],
+			[				
+				'pensum' => 'Show Customers',
+				'video' => '20)showstripesym6.mp4',
+				'id_course' => 2								
+			],
+			[				
+				'pensum' => 'Delete Customers',
+				'video' => '21)deletestripesym6.mp4',
+				'id_course' => 2								
+			],
+			[				
+				'pensum' => 'Serializar',
+				'video' => '22)serializesym6.mp4',
+				'id_course' => 2								
+			],
+			[				
+				'pensum' => 'Deserializar',
+				'video' => '23)deserializesym6.mp4',
+				'id_course' => 2								
+			],
+			[				
+				'pensum' => 'Agregar Estilos',
+				'video' => '24)estilossym6.mp4',
+				'id_course' => 2								
+			],
+			[				
+				'pensum' => 'GRID Estilos',
+				'video' => '25)gridsym6.mp4',
+				'id_course' => 2								
+			],
+			[				
+				'pensum' => 'Leaflet Mapas',
+				'video' => '26)leafletmapsym6.mp4',
+				'id_course' => 2								
+			],
+			[				
+				'pensum' => 'Logearse',
+				'video' => '27)logearseendsym6.mp4',
 				'id_course' => 2								
 			],					
 		];
