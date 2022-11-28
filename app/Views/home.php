@@ -48,7 +48,7 @@
 
 				<div class="card">
 
-					<img class="img-fluid" src="assets/img/course_codeigniter4.png" alt="Course CodeIgniter 4">
+					<img class="img-fluid" src="assets/img/courso_codeigniter4.png" alt="Curso CodeIgniter 4">
 
 					<div class="card-header">
 
@@ -75,11 +75,73 @@
 
 				<div class="card">
 
-					<img class="img-fluid" src="assets/img/course_symfony6.png" alt="Course Symfony 6">
+					<img class="img-fluid" src="assets/img/curso_symfony6.png" alt="Curso Symfony 6">
 
 					<div class="card-header">				
 
 						<h3>Symfony 6 De Basico a Intermedio</h3>
+
+					</div>
+
+					<div class="card-body">
+						<br>					
+
+						<h4>Academia Online</h4>					
+
+
+						<a class="btn btn-primary" href="/register">
+							<span class="fas fa-arrow-right"></span>		
+						Empezar Hoy</a>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- end row -->
+		<br>
+
+		<div class="row">
+
+			<div class="col-sm-4">
+
+				<div class="card">
+
+					<img class="img-fluid" src="assets/img/curso_symfony5" alt="Curso Symfony 5">
+
+					<div class="card-header">
+
+						<h3>Symfony 5 De Basico a Intermedio</h3>
+
+					</div>
+
+					<div class="card-body">
+						<br>					
+
+						<h4>Academia Online</h4>					
+
+						<a class="btn btn-primary" href="/register">
+							<span class="fas fa-arrow-right"></span>		
+						Empezar Hoy</a>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="col-sm-4">
+
+				<div class="card">
+
+					<img class="img-fluid" src="assets/img/curso_yii2.png" alt="Curso Yii 2">
+
+					<div class="card-header">				
+
+						<h3>Yii 2 De Basico a Intermedio</h3>
 
 					</div>
 

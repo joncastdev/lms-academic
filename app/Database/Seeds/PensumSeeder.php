@@ -293,6 +293,221 @@ class PensumSeeder extends Seeder
 				'pensum' => 'Logearse',
 				'video' => '27)logearseendsym6.mp4',
 				'id_course' => 2								
+			],
+			[			
+				'pensum' => 'Requerimientos',
+				'video' => '1)simrequerimientos.mp4',
+				'id_course' => 3									
+			],
+			[				
+				'pensum' => 'Server Local',
+				'video' => '2)simserver.mp4',
+				'id_course' => 3								
+			],
+			[				
+				'pensum' => 'Estructura',
+				'video' => '3)simestructura.mp4',
+				'id_course' => 3								
+			],
+			[				
+				'pensum' => 'Controladores',
+				'video' => '4)simcontroller.mp4',
+				'id_course' => 3								
+			],
+			[				
+				'pensum' => 'Response Ejemplo',
+				'video' => '5)simresponse.mp4',
+				'id_course' => 3								
+			],
+			[				
+				'pensum' => 'Rutas',
+				'video' => '6)simrouter.mp4',
+				'id_course' => 3								
+			],
+			[				
+				'pensum' => 'Entidades',
+				'video' => '7)simentity.mp4',
+				'id_course' => 3								
+			],
+			[				
+				'pensum' => 'Migraciones',
+				'video' => '8)simmigrations.mp4',
+				'id_course' => 3								
+			],
+			[				
+				'pensum' => 'CRUD',
+				'video' => '9)simcrud.mp4',
+				'id_course' => 3								
+			],
+			[				
+				'pensum' => 'Bootstrap',
+				'video' => '10)simboostrap.mp4',
+				'id_course' => 3								
+			],
+			[				
+				'pensum' => 'GRID',
+				'video' => '11)simgrid.mp4',
+				'id_course' => 3								
+			],
+			[				
+				'pensum' => 'Refrescar',
+				'video' => '12)simrefresh.mp4',
+				'id_course' => 3								
+			],
+			[				
+				'pensum' => 'Valor',
+				'video' => '13)simvalor.mp4',
+				'id_course' => 3								
+			],
+			[				
+				'pensum' => 'Insertar',
+				'video' => '14)siminsert.mp4',
+				'id_course' => 3								
+			],
+			[				
+				'pensum' => 'Eliminar',
+				'video' => '15)simdelete.mp4',
+				'id_course' => 3								
+			],
+			[				
+				'pensum' => 'MakeUser',
+				'video' => '16)sinmakeuser.mp4',
+				'id_course' => 3								
+			],
+			[				
+				'pensum' => 'MakeCrud',
+				'video' => '17)sinmakecrud.mp4',
+				'id_course' => 3								
+			],
+			[				
+				'pensum' => 'Fixtures',
+				'video' => '18)simfixtures.mp4',
+				'id_course' => 3								
+			],
+			[				
+				'pensum' => 'Fixtures Ejemplo',
+				'video' => '19)simfixturesload.mp4',
+				'id_course' => 3								
+			],
+			[				
+				'pensum' => 'LoadFixtures',
+				'video' => '20)simloadfixtures.mp4',
+				'id_course' => 3								
+			],
+			[				
+				'pensum' => 'Accesos',
+				'video' => '21)simaccesos.mp4',
+				'id_course' => 3								
+			],
+			[				
+				'pensum' => 'Excepciones',
+				'video' => '22)simexceptions.mp4',
+				'id_course' => 3								
+			],
+			[				
+				'pensum' => 'Login',
+				'video' => '23)simlogin.mp4',
+				'id_course' => 3								
+			],
+			[				
+				'pensum' => 'Login User',
+				'video' => '24)simloginuser.mp4',
+				'id_course' => 3								
+			],
+			[				
+				'pensum' => 'Archivos Js',
+				'video' => '25)simjs.mp4',
+				'id_course' => 3								
+			],
+			[				
+				'pensum' => 'DataTables',
+				'video' => '26)simdatables.mp4',
+				'id_course' => 3								
+			],
+			[				
+				'pensum' => 'Formularios',
+				'video' => '27)registerform.mp4',
+				'id_course' => 3								
+			],
+			[			
+				'pensum' => 'Instalar con Composer',
+				'video' => '1)yiicomposer.mp4',
+				'id_course' => 4									
+			],
+			[				
+				'pensum' => 'Url Amigables',
+				'video' => '2)yiiurl.mp4',
+				'id_course' => 4								
+			],
+			[				
+				'pensum' => 'Generador Gii',
+				'video' => '3)yiigii.mp4',
+				'id_course' => 4								
+			],
+			[				
+				'pensum' => 'Consola',
+				'video' => '4)yiigiicli.mp4',
+				'id_course' => 4								
+			],
+			[				
+				'pensum' => 'Base de Datos',
+				'video' => '5)yiidb.mp4',
+				'id_course' => 4								
+			],
+			[				
+				'pensum' => 'Modelos',
+				'video' => '6)yii2crudmodels.mp4',
+				'id_course' => 4								
+			],
+			[				
+				'pensum' => 'CRUD',
+				'video' => '7)yii2crudend.mp4',
+				'id_course' => 4								
+			],
+			[				
+				'pensum' => 'Auth Parte 1',
+				'video' => '8)yii2auth.mp4',
+				'id_course' => 4								
+			],
+			[				
+				'pensum' => 'Auth Parte 2',
+				'video' => '9)yii2auth2.mp4',
+				'id_course' => 4								
+			],
+			[				
+				'pensum' => 'Migraciones',
+				'video' => '10)yii2authmigra.mp4',
+				'id_course' => 4								
+			],
+			[				
+				'pensum' => 'Sobreescribir',
+				'video' => '11)yii2modelover.mp4',
+				'id_course' => 4								
+			],
+			[				
+				'pensum' => 'Metodos',
+				'video' => '12)yii2methodsuser.mp4',
+				'id_course' => 4								
+			],
+			[				
+				'pensum' => 'Fixtures',
+				'video' => '13)yii2fixtures.mp4',
+				'id_course' => 4								
+			],
+			[				
+				'pensum' => 'Setear Stripe',
+				'video' => '200)yii2stripe.mp4',
+				'id_course' => 4								
+			],
+			[				
+				'pensum' => 'Customers',
+				'video' => '201)yii2customer.mp4',
+				'id_course' => 4								
+			],
+			[				
+				'pensum' => 'CRUD Customers',
+				'video' => '202)yii2crud.mp4',
+				'id_course' => 4								
 			],					
 		];
 

@@ -18,17 +18,17 @@ class CourseSeeder extends Seeder
 				'id_price' => 1									
 			],
 			[				
+				'name' => 'Symfony5',
+				'id_price' => 1									
+			],
+			[				
 				'name' => 'Yii2',
 				'id_price' => 1									
 			],
-			[				
-				'name' => 'Cakephp4',
-				'id_price' => 1									
-			],
-			[				
-				'name' => 'Laravel9',
-				'id_price' => 1									
-			],
+			// [				
+			// 	'name' => 'Laravel9',
+			// 	'id_price' => 1									
+			// ],
 			// [				
 			// 	'name' => 'Symfony5',
 			// 	'id_price' => 1									

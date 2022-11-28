@@ -54,6 +54,10 @@ $ php spark migrate -all
 
 - Run seeds
 
+```bash 
+$ truncate table courses;
+```
+
 ```bash
 $ php spark db:seed LoadSeeder
 ```
