@@ -20,8 +20,6 @@
 
 			<h1>Cursos de Programación</h1>
 
-			<?php echo $this->include('inc/ads_top') ?>
-
 			<p>Aprende con cursos online desde cero al precio más económico</p>
 
 			<h2>¿Cómo funciona la academia en línea?</h2>
@@ -42,15 +40,10 @@
 
 
 			<br>
-		<h2>Cursos Disponibles:</h2>
-
-	
+		<h2>Cursos Disponibles:</h2>	
 
 		<div class="row">
 
-			<?php echo $this->include('inc/ads_mid') ?>
-
-			<?php foreach ($all_courses as $coursesb): ?>	
 			<div class="col-sm-4">
 
 				<div class="card">
@@ -59,16 +52,18 @@
 
 					<div class="card-header">
 
-						<h3><?php echo $coursesb->name; ?></h3>
+						<h3>CodeIgniter 4 De Basico a Intermedio</h3>
 
 					</div>
 
 					<div class="card-body">
 						<br>					
 
-						<h4>Disponible en Academia Online (Gratis)</h4>					
+						<h4>Academia Online</h4>					
 
-						<a href="/courses-free/<?php echo $coursesb->id_course; ?>" class="btn btn-info">Empezar el Curso</a>	
+						<a class="btn btn-primary" href="/register">
+							<span class="fas fa-arrow-right"></span>		
+						Empezar Hoy</a>
 
 					</div>
 
@@ -76,10 +71,7 @@
 
 			</div>
 
-			<?php echo $this->include('inc/ads_down') ?>
-
-
-			<!-- <div class="col-sm-4">
+			<div class="col-sm-4">
 
 				<div class="card">
 
@@ -105,17 +97,14 @@
 
 				</div>
 
-			</div> -->
+			</div>
 
-<?php endforeach ?>
 		</div>
-
-		
 
 		<!-- end row -->
 		<br>
 
-	<!-- 	<div class="row">
+		<div class="row">
 
 			<div class="col-sm-4">
 
@@ -172,7 +161,7 @@
 
 			</div>
 
-		</div> -->
+		</div>
 
 		<!-- end row -->
 
@@ -182,10 +171,10 @@
 		
 
 
-		<!-- <div class="col-sm-4">				
+		<div class="col-sm-4">				
 
 
-		</div> -->
+		</div>
 
 	</div>
 

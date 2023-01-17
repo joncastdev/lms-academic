@@ -39,11 +39,11 @@ $routes->set404Override();
 
 $routes->get('/', 'Home::index');
 
-$routes->get('/login', 'Login::index');
+// $routes->get('/login', 'Login::index');
 
-$routes->get('/register', 'Login::register');
+// $routes->get('/register', 'Login::register');
 
-$routes->post('/create', 'Login::create');
+// $routes->post('/create', 'Login::create');
 
 $routes->post('/logearse', 'Login::sign');
 
@@ -90,6 +90,11 @@ $routes->get('/videos/(.*)', 'Courses::videos/$1');
 $routes->get('/checkout/(.*)', 'Courses::checkout/$1');
 
 $routes->get('/notify', 'Courses::notify');
+
+
+// rutas free cursos
+$routes->get('/courses-free/(.*)', 'Home::show/$1');
+$routes->get('/videos-free/(.*)', 'Home::videos/$1');
 
 // $routes->post('/notify', 'Courses::notify');
 

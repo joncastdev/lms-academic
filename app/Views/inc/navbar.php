@@ -13,7 +13,7 @@
    <!-- Nav Item - User Information -->
    <li class="nav-item">
     <a class="nav-link" href="/login">
-      <span class="mr-2 d-none d-lg-inline text-gray-600 small">Login</span>             
+    <!--   <span class="mr-2 d-none d-lg-inline text-gray-600 small">Login</span>     -->         
     </a>
 
   </li>
