@@ -56,7 +56,7 @@ crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script> 
 
 
-<script type="text/javascript">    
+<!-- <script type="text/javascript">    
 
 	$(document).ready(function(){
 
@@ -100,7 +100,7 @@ crossorigin="anonymous"></script>
 		return bloqueador !== undefined ? bloqueador : await tryRequest();
 	}
 
-</script> 
+</script>  -->
 
 <script type="text/javascript">
 

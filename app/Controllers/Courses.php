@@ -386,6 +386,16 @@ public function success()
 		$result3 = $this->db->query($query3);
 
 
+		//insert certificados
+		$created_at = date('y-m-d');
+
+        $updated_at = date('y-m-d');
+
+		$querycert= "INSERT INTO certificates(id_course,created_at,updated_at) VALUES ('{$id_course}','{$created_at}','{$updated_at}')";
+
+		$resultcert = $this->db->query($querycert);
+
+
 		$data['tittle'] = 'Success';
 
 		$data['session'] = $this->session;

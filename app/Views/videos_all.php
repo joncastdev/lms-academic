@@ -66,7 +66,7 @@
 
 							<?php $total = $pensums->id_pensum+1; ?>
 
-							<a href="/videos/<?php echo $total; ?>" class="btn btn-success">Next</a>
+							<a href="/videos-free/<?php echo $total; ?>" class="btn btn-success">Next</a>
 
 						</div>
 

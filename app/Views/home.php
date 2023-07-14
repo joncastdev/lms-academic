@@ -2,8 +2,15 @@
 
 <?php echo $this->section('meta') ?>
 
-<link rel="canonical" href="https://cursos-de-programacion.opengiscrm.com/" />    
-<meta name="description" content="Encuentra cursos de programación en la academia online">
+<link rel="canonical" href="https://cursosprogramaciongratis.online/" />    
+<meta name="description" content="Cursos de Programación Gratis Online con diplomado y certificado en el año 2022-2023, Ofertas, Promociones en cursosprogramaciongratis.online">
+
+<style type="text/css">
+	p {
+		font-size: 18px;
+	}
+	
+</style>
 
 <?php echo $this->endSection() ?>
 
@@ -18,65 +25,93 @@
 	<div class="row">
 		<div class="col-sm-12">			
 
-			<h1>Cursos de Programación</h1>
+			<h1>Cursos de Programación Gratis Online</h1>
 
 			<?php echo $this->include('inc/ads_top') ?>
 
-			<p>Aprende con cursos online desde cero al precio más económico</p>
+			<p><b>Cursos de Programación Gratis Online</b> con diplomados y certificados en el año 2023, en este sitio web encontraras libros <b>PDF</b> (ebook digitales), <b>códigos fuentes</b> y <b>podcast</b></p>
 
-			<h2>¿Cómo funciona la academia en línea?</h2>
-			<p>Al registrarse en la escuela web, obtendrá acceso a los nuevos cursos publicados con varios tipos de ejercicios.</p>
-			<ul>
-				<li>Cursos en formato de video</li>				   			
-			</ul>
+			<h2>Cursos de programación con certificado</h2>
 
-			<h2>¿Cual es el precio?</h2>
-			<p>El precio de los cursos es <b>10$</b> por curso, con acceso al curso con contenido actual y nuevas actualizaciones</p>
+				<p>En nuestro programa formativo el estudiante podrá obtener un <b>certificado de programación</b> gratis por participar en cada curso de nuestra academia online ya sea en materias como php, java, python, javascript, .net, sql entre otros</p>
 
-			<h2>¿Cuáles son los métodos de pago?</h2>
-			<p>Actualmente solo se aceptan pagos en el procesador de pagos paypal</p>
+				<h2>Diplomados Online Gratis</h2>
+
+				<p>Al concluir cualquiera de nuestros Másters el estudiante puede optar por el diplomado online <b>(fullstack developer web)</b>, nuestro máster se basa en estudiar un tema o nicho en profundidad algunos ejemplos son el Máster de PHP el cual incluye lo siguiente</p>
+
+				<ul>
+					<li>CodeIgniter 3 y 4</li>
+					<li>Laravel 9 y 10</li>
+					<li>Yii 1.1 y 2</li>
+					<li>CakePHP 4</li>
+					<li>Zend Framework (Laminas MVC)</li>
+					<li>Symfony 5 y 6</li>
+				</ul>
+
+				<h2>Libros de Programación PDF</h2>
+
+				<p>En nuestra academia contamos con un gran número de ebook digitales, para que el estudiante ponga a prueba sus conocimientos con un conjunto de preguntas y respuestas de selección simple</p>
+
+					<h2>Códigos de Programación</h2>
+					<p>Ademas cada curso he ebook cuenta con un proyecto base el cual es un código fuente de programación el cual se puede descargar, ademas que todo recurso en la academia se actualiza constantemente</p>
+
+					<h2>Podcast de Programación</h2>
+
+					<p>Recomendamos contenido de nuestros partners, así que los estudiantes tendrán a su alcance las ultimas tendencias sobre contenido educativo, motivacional y relajante, en Cursos de Programación Gratis Online tenemos mucho contenido para ti</p>
+
+					<h2>¿Cómo funciona la academia en línea?</h2>
+					<p>Al registrarse en la escuela web, obtendrá acceso a los nuevos cursos publicados con varios tipos de ejercicios.</p>
+					<ul>
+						<li>Cursos en formato de video</li>				   			
+					</ul>
+
+					<h2>¿Cual es el precio?</h2>
+					<p>El precio de los cursos es <b>10$</b> por curso, con acceso al curso con contenido actual y nuevas actualizaciones</p>
+
+					<h2>¿Cuáles son los métodos de pago?</h2>
+					<p>Actualmente solo se aceptan pagos en el procesador de pagos paypal</p>
 
 
-			<h2>¿Sistema de reembolso?</h2>
-			<p>No se realizan reembolsos, al realizar la compra usted acepta el servicio que se le brindará</p>
+					<h2>¿Sistema de reembolso?</h2>
+					<p>No se realizan reembolsos, al realizar la compra usted acepta el servicio que se le brindará</p>
 
 
-			<br>
-		<h2>Cursos Disponibles:</h2>
+					<br>
+					<h2>Cursos Disponibles:</h2>
 
-	
 
-		<div class="row">
 
-			<?php echo $this->include('inc/ads_mid') ?>
+					<div class="row">
 
-			<?php foreach ($all_courses as $coursesb): ?>	
-			<div class="col-sm-4">
+						<?php echo $this->include('inc/ads_mid') ?>
 
-				<div class="card">
+						<?php foreach ($all_courses as $coursesb): ?>	
+							<div class="col-sm-4">
 
-					<img class="img-fluid" src="assets/img/courso_codeigniter4.png" alt="Curso CodeIgniter 4">
+								<div class="card">
 
-					<div class="card-header">
+									<img class="img-fluid" src="assets/img/curso_codeigniter4.png" alt="Curso CodeIgniter 4">
 
-						<h3><?php echo $coursesb->name; ?></h3>
+									<div class="card-header">
 
-					</div>
+										<h3><?php echo $coursesb->name; ?></h3>
 
-					<div class="card-body">
-						<br>					
+									</div>
 
-						<h4>Disponible en Academia Online (Gratis)</h4>					
+									<div class="card-body">
+										<br>					
 
-						<a href="/courses-free/<?php echo $coursesb->id_course; ?>" class="btn btn-info">Empezar el Curso</a>	
+										<h4>Disponible en Academia Online (Gratis)</h4>					
 
-					</div>
+										<a href="/courses-free/<?php echo $coursesb->id_course; ?>" class="btn btn-info">Empezar el Curso</a>	
 
-				</div>
+									</div>
 
-			</div>
+								</div>
 
-			<?php echo $this->include('inc/ads_down') ?>
+							</div>
+
+							<?php echo $this->include('inc/ads_down') ?>
 
 
 			<!-- <div class="col-sm-4">
@@ -107,13 +142,13 @@
 
 			</div> -->
 
-<?php endforeach ?>
-		</div>
+		<?php endforeach ?>
+	</div>
 
-		
 
-		<!-- end row -->
-		<br>
+
+	<!-- end row -->
+	<br>
 
 	<!-- 	<div class="row">
 
@@ -177,9 +212,9 @@
 		<!-- end row -->
 
 
-		</div>
+	</div>
 
-		
+
 
 
 		<!-- <div class="col-sm-4">				

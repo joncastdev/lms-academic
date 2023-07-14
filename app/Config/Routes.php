@@ -39,11 +39,11 @@ $routes->set404Override();
 
 $routes->get('/', 'Home::index');
 
-// $routes->get('/login', 'Login::index');
+$routes->get('/login', 'Login::index');
 
-// $routes->get('/register', 'Login::register');
+$routes->get('/register', 'Login::register');
 
-// $routes->post('/create', 'Login::create');
+$routes->post('/create', 'Login::create');
 
 $routes->post('/logearse', 'Login::sign');
 
@@ -91,6 +91,9 @@ $routes->get('/checkout/(.*)', 'Courses::checkout/$1');
 
 $routes->get('/notify', 'Courses::notify');
 
+// rutas certificados
+$routes->get('/certificates', 'Certificates::index');
+$routes->get('/number', 'Certificates::number');
 
 // rutas free cursos
 $routes->get('/courses-free/(.*)', 'Home::show/$1');
