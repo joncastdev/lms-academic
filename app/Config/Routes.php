@@ -94,6 +94,12 @@ $routes->get('/notify', 'Courses::notify');
 // rutas certificados
 $routes->get('/certificates', 'Certificates::index');
 $routes->get('/number', 'Certificates::number');
+$routes->get('/pdfnumber/(.*)', 'Certificates::pdfNumber/$1');
+
+// rutas pdf pensum free
+$routes->get('/pdfsymfonyseis', 'Home::pdfSymfonySeis');
+$routes->get('/pdfcodeignitercuatro', 'Home::pdfCodeigniterCuatro');
+$routes->get('/pdflaraveldiez', 'Home::pdfLaravelDiez');
 
 // rutas free cursos
 $routes->get('/courses-free/(.*)', 'Home::show/$1');

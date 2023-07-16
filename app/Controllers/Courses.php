@@ -230,7 +230,7 @@ class Courses extends BaseController
 
 		$data['users_courses_exists'] = $result2->getRow();
 
-		if ($id > 4) {
+		if ($id > 5) {
 			throw new \Exception('This course is not available');
 		}
 

@@ -8,6 +8,11 @@ class PensumSeeder extends Seeder
 {
 	public function run()
 	{
+
+		$this->db->table('pensums')->truncate();
+		//cualquiera de los 2 metodos
+		// $this->db->table('pensums')->emptyTable();
+
 		$data = [
 			[			
 				'pensum' => 'Herramientas',
@@ -508,7 +513,87 @@ class PensumSeeder extends Seeder
 				'pensum' => 'CRUD Customers',
 				'video' => '202)yii2crud.mp4',
 				'id_course' => 4								
-			],					
+			],
+			[				
+				'pensum' => 'Instalar',
+				'video' => '1)newlaracomposer.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Estructura',
+				'video' => '2)newlaraestructura.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Controladores',
+				'video' => '3)newlaracontroller.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Database',
+				'video' => '4)newlaradb.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Eloquent',
+				'video' => '5)newlaraeloquent.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Parametros',
+				'video' => '6)newlaraparams.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Joins',
+				'video' => '7)newlarajoins.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Migraciones',
+				'video' => '8)newlaramigrations.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Factory',
+				'video' => '9)newlarafactory.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Logs',
+				'video' => '10)newlaralogs.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Headers',
+				'video' => '11)newlaraheaders.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Querys Eloquent',
+				'video' => '12)newartisanquerys.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Relaciones de Tablas',
+				'video' => '13)newlararelation.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Widget Parte 1',
+				'video' => '14)newlarawidget1.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Widget Parte 2',
+				'video' => '15)newlarawidgets2.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Widget Parte 3',
+				'video' => '16)newlarawidgets3.mp4',
+				'id_course' => 5								
+			],									
 		];
 
 		$this->db->table('pensums')->insertBatch($data);

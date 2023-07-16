@@ -33,85 +33,115 @@
 
 			<h2>Cursos de programación con certificado</h2>
 
-				<p>En nuestro programa formativo el estudiante podrá obtener un <b>certificado de programación</b> gratis por participar en cada curso de nuestra academia online ya sea en materias como php, java, python, javascript, .net, sql entre otros</p>
+			<div class="col-sm-6 offset-3">
 
-				<h2>Diplomados Online Gratis</h2>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/wKdxSSVeC84" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-				<p>Al concluir cualquiera de nuestros Másters el estudiante puede optar por el diplomado online <b>(fullstack developer web)</b>, nuestro máster se basa en estudiar un tema o nicho en profundidad algunos ejemplos son el Máster de PHP el cual incluye lo siguiente</p>
+			</div>
 
-				<ul>
-					<li>CodeIgniter 3 y 4</li>
-					<li>Laravel 9 y 10</li>
-					<li>Yii 1.1 y 2</li>
-					<li>CakePHP 4</li>
-					<li>Zend Framework (Laminas MVC)</li>
-					<li>Symfony 5 y 6</li>
-				</ul>
+			<br>
 
-				<h2>Libros de Programación PDF</h2>
+			<p>En nuestro programa formativo el estudiante podrá obtener un <b>certificado de programación</b> gratis por participar en cada curso de nuestra academia online ya sea en materias como php, java, python, javascript, .net, sql entre otros</p>
 
-				<p>En nuestra academia contamos con un gran número de ebook digitales, para que el estudiante ponga a prueba sus conocimientos con un conjunto de preguntas y respuestas de selección simple</p>
+			<h2>Diplomados Online Gratis</h2>
 
-					<h2>Códigos de Programación</h2>
-					<p>Ademas cada curso he ebook cuenta con un proyecto base el cual es un código fuente de programación el cual se puede descargar, ademas que todo recurso en la academia se actualiza constantemente</p>
+			<p>Al concluir cualquiera de nuestros Másters el estudiante puede optar por el diplomado online <b>(fullstack developer web)</b>, nuestro máster se basa en estudiar un tema o nicho en profundidad algunos ejemplos son el Máster de PHP el cual incluye lo siguiente</p>
 
-					<h2>Podcast de Programación</h2>
+			<ul>
+				<li>CodeIgniter 3 y 4</li>
+				<li>Laravel 9 y 10</li>
+				<li>Yii 1.1 y 2</li>
+				<li>CakePHP 4</li>
+				<li>Zend Framework (Laminas MVC)</li>
+				<li>Symfony 5 y 6</li>
+			</ul>
 
-					<p>Recomendamos contenido de nuestros partners, así que los estudiantes tendrán a su alcance las ultimas tendencias sobre contenido educativo, motivacional y relajante, en Cursos de Programación Gratis Online tenemos mucho contenido para ti</p>
+			<h2>Libros de Programación PDF</h2>
 
-					<h2>¿Cómo funciona la academia en línea?</h2>
-					<p>Al registrarse en la escuela web, obtendrá acceso a los nuevos cursos publicados con varios tipos de ejercicios.</p>
-					<ul>
-						<li>Cursos en formato de video</li>				   			
-					</ul>
+			<p>En nuestra academia contamos con un gran número de ebook digitales, para que el estudiante ponga a prueba sus conocimientos con un conjunto de preguntas y respuestas de selección simple</p>
 
-					<h2>¿Cual es el precio?</h2>
-					<p>El precio de los cursos es <b>10$</b> por curso, con acceso al curso con contenido actual y nuevas actualizaciones</p>
+			<h2>Códigos de Programación</h2>
+			<p>Ademas cada curso he ebook cuenta con un proyecto base el cual es un código fuente de programación el cual se puede descargar, ademas que todo recurso en la academia se actualiza constantemente</p>
 
-					<h2>¿Cuáles son los métodos de pago?</h2>
-					<p>Actualmente solo se aceptan pagos en el procesador de pagos paypal</p>
+			<h2>Podcast de Programación</h2>
+
+			<p>Recomendamos contenido de nuestros partners, así que los estudiantes tendrán a su alcance las ultimas tendencias sobre contenido educativo, motivacional y relajante, en Cursos de Programación Gratis Online tenemos mucho contenido para ti</p>
+
+			<h2>¿Cómo funciona la academia en línea?</h2>
+			<p>Al registrarse en la escuela web, obtendrá acceso a los nuevos cursos publicados con varios tipos de ejercicios.</p>
+			<ul>
+				<li>Cursos en formato de video</li>				   			
+			</ul>
+
+			<h2>¿Cual es el precio?</h2>
+			<p>El precio de los cursos es <b>10$</b> por curso, con acceso al curso con contenido actual y nuevas actualizaciones</p>
+
+			<h2>¿Cuáles son los métodos de pago?</h2>
+			<p>Actualmente solo se aceptan pagos en el procesador de pagos paypal</p>
 
 
-					<h2>¿Sistema de reembolso?</h2>
-					<p>No se realizan reembolsos, al realizar la compra usted acepta el servicio que se le brindará</p>
+			<h2>¿Sistema de reembolso?</h2>
+			<p>No se realizan reembolsos, al realizar la compra usted acepta el servicio que se le brindará</p>
 
 
-					<br>
-					<h2>Cursos Disponibles:</h2>
+			<br>
+			<h2>Cursos Disponibles:</h2>
+
+			<a class="btn btn-danger" href="/pdfsymfonyseis">
+				<span class="fas fa-download"></span>		
+			Descargar Pensum</a>
+
+			<a class="btn btn-danger" href="/pdfcodeignitercuatro">
+				<span class="fas fa-download"></span>		
+			Descargar Pensum</a>
 
 
 
-					<div class="row">
+			<div class="row">
 
-						<?php echo $this->include('inc/ads_mid') ?>
+				<?php echo $this->include('inc/ads_mid') ?>
 
-						<?php foreach ($all_courses as $coursesb): ?>	
-							<div class="col-sm-4">
+				<?php foreach ($all_courses as $coursesb): ?>	
+					<div class="col-sm-4">
 
-								<div class="card">
+						<div class="card">
 
-									<img class="img-fluid" src="assets/img/curso_codeigniter4.png" alt="Curso CodeIgniter 4">
+							<img class="img-fluid" src="assets/img/curso_codeigniter4.png" alt="Curso CodeIgniter 4">
 
-									<div class="card-header">
+							<div class="card-header">
 
-										<h3><?php echo $coursesb->name; ?></h3>
-
-									</div>
-
-									<div class="card-body">
-										<br>					
-
-										<h4>Disponible en Academia Online (Gratis)</h4>					
-
-										<a href="/courses-free/<?php echo $coursesb->id_course; ?>" class="btn btn-info">Empezar el Curso</a>	
-
-									</div>
-
-								</div>
+								<h3><?php echo $coursesb->name; ?></h3>
 
 							</div>
 
-							<?php echo $this->include('inc/ads_down') ?>
+							<div class="card-body">
+								<br>					
+
+								<h4>Disponible en Academia Online (Gratis)</h4>					
+
+								<div class="row">
+
+									<div class="col-6">
+										<a href="/courses-free/<?php echo $coursesb->id_course; ?>" class="btn btn-info">Empezar el Curso</a>
+									</div>
+
+									<div class="col-6">
+
+										<a class="btn btn-danger" href="/pdfsymfonyseis">
+											<span class="fas fa-download"></span>		
+										Descargar Pensum</a>
+
+									</div>
+
+								</div>	
+
+							</div>
+
+						</div>
+
+					</div>
+
+					<?php echo $this->include('inc/ads_down') ?>
 
 
 			<!-- <div class="col-sm-4">

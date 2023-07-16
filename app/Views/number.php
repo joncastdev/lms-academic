@@ -60,9 +60,9 @@
 					<div class="card-body">
 
 
-						<a class="btn btn-danger" href="/register">
+						<a class="btn btn-danger" href="/pdfnumber/<?php echo $certificate_info[0]->id_certificate; ?>">
 							<span class="fas fa-download"></span>		
-						Descargar en formato PDF</a>				
+						Descargar Pensum en formato PDF</a>				
 
 						<br>
 
@@ -75,13 +75,18 @@
 
 								<h1 class="text-dark offset-2">Certificado de Participación</h1>
 
-								<h2 class="text-white offset-2">Estudiante: <?php echo $certificate_info[0]->first_name.' '.$certificate_info[0]->last_name; ?></h2>
+								<h2 class="text-white offset-2">Estudiante <?php echo $certificate_info[0]->first_name.' '.$certificate_info[0]->last_name; ?></h2>
 
-								<h2 class="text-white offset-2">Curso: <?php echo $certificate_info[0]->name; ?></h2>
+								<h2 class="text-white offset-2">Curso <?php echo $certificate_info[0]->name; ?></h2>
 
-								<h2 class="text-white offset-2">Fecha: <?php echo $certificate_info[0]->created_at; ?></h2>
+								<h2 class="text-white offset-2">Fecha <?php echo $certificate_info[0]->created_at; ?></h2>
 
-								<h3 class="text-dark offset-2">www.cursosprogramaciongratis.online</h3>
+								<h2 class="text-white offset-2">Fecha <?php echo date('d-m-Y',strtotime($certificate_info[0]->created_at)) ?></h2>
+
+
+								<h2 class="text-white offset-2">Certificado Nro # <?php echo $certificate_info[0]->id_certificate; ?></h2>
+
+								<h4 class="text-dark text-center">www.cursosprogramaciongratis.online</h4>
 
 
 
