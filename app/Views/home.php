@@ -5,10 +5,59 @@
 <link rel="canonical" href="https://cursosprogramaciongratis.online/" />    
 <meta name="description" content="Cursos de Programación Gratis Online con diplomado y certificado en el año 2022-2023, Ofertas, Promociones en cursosprogramaciongratis.online">
 
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"> -->
+
+	<!-- <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script> -->
+
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
+
 <style type="text/css">
 	p {
 		font-size: 18px;
 	}
+	.main-content .item img{
+				display: block;
+				width: 100%;
+				height: auto;     
+				margin-bottom: 20px;
+				border-radius: 12px;       
+			}
+
+			.main-content {
+				position: relative;
+			}
+
+			.custom-nav
+			{
+				position: absolute;
+				top: 20%;
+				left: 0;
+				right: 0;
+			}
+
+			.owl-prev, .owl-next {
+				position: absolute;
+				height: 100px;
+				color: inherit;
+				background: none;
+				border: none;
+				z-index: 100;
+			}
+
+			i {
+				font-size: 2.5rem;
+				color: white;
+			}
+
+
+			.owl-prev {
+				left: 0;
+			}
+
+			.owl-next {
+				right: 0;
+			}
+
 	
 </style>
 
@@ -82,6 +131,50 @@
 
 			<h2>¿Sistema de reembolso?</h2>
 			<p>No se realizan reembolsos, al realizar la compra usted acepta el servicio que se le brindará</p>
+
+			<br>
+			<div class="row">
+
+				<!-- <h2>Próximos Cursos:</h2> -->
+
+		<!-- <div class="container-fluid"> -->
+
+			<div class="col-md-8 offset-2">
+
+					<h3 class="bg-info text-white text-center">Próximos Cursos:</h3>
+
+				<div class="main-content">
+				
+					<div class="owl-carousel owl-theme">
+						<div class="item">
+							<img src="<?php echo base_url();?>/assets/img/curso_basededatos.png" alt="Curso base de datos profesional">
+						</div>
+						<div class="item">
+							<img src="<?php echo base_url();?>/assets/img/curso_laravel10_google.png" alt="Curso Laravel 10 Extensiones Google Chrome">
+						</div>
+						<div class="item">
+							<img src="<?php echo base_url();?>/assets/img/curso_autodesk.png" alt="Curso Autodesk API con Python">
+						</div>
+						<div class="item">
+							<img src="<?php echo base_url();?>/assets/img/curso_cakephp_tienda.png" alt="Tiendas Online CakePHP 4">
+						</div>						
+					</div>
+					<div class="owl-theme">
+						<div class="owl-controls">
+							<div class="custom-nav owl-nav"></div>
+						</div>
+					</div>	
+
+					
+				</div>
+
+			</div>
+
+			<!-- </div> -->
+
+		</div>
+
+		<br>
 
 
 			<br>
@@ -413,8 +506,57 @@
 <br>
 <br>
 
+<!-- <script type="text/javascript">
+	$(document).ready(function() {
+
+
+			$(".main-content .owl-carousel").owlCarousel({
+				stagePadding: 50,
+				center: true,  
+				navigation : true,
+				slideSpeed : 300,
+				paginationSpeed : 400,
+				items : 2, 
+				itemsDesktop : false,
+				itemsDesktopSmall : false,
+				itemsTablet: false,
+				itemsMobile : false,         
+				autoplay: false,
+				margin: 20,                         
+				loop:true,
+				dots: false,
+				nav:false,
+				navText: [
+				'<i class="fa fa-angle-left" aria-hidden="true"></i>',
+				'<i class="fa fa-angle-right" aria-hidden="true"></i>'
+				],
+				navContainer: '.main-content .custom-nav',                          
+				responsive: {
+					0: {
+						items: 1                                        
+					},
+					600: {
+						items: 2                                            
+					},
+					1000: {                     
+						items: 2
+
+
+					}
+				},
+
+
+
+			});
+
+		});
+
+	</script>			
+	 -->
+
 
 <?php echo $this->include('inc/footer') ?>
+
 
 
 <?php echo $this->endSection() ?>

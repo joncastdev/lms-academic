@@ -258,6 +258,174 @@ class Home extends BaseController
 
 	}
 
+	public function pdfSymfonyCinco()
+	{ 		
+
+		$query = "SELECT * FROM pensums as p 		
+		left join courses as c on c.id_course = p.id_course			
+		where p.id_course = 3";
+
+		$result = $this->db->query($query);
+
+		$data = $result->getResultArray();
+
+
+		$this->pdf = new fpdf();	
+
+		$this->pdf->AddPage();
+
+		$this->pdf->AliasNbPages(); 
+
+		$this->pdf->SetTitle("Pensum Curso Symfony 5");
+		$this->pdf->SetLeftMargin(15);
+		$this->pdf->SetRightMargin(15);
+		$this->pdf->SetFillColor(200,200,200); 
+
+		$this->pdf->SetFont('Arial', 'B', 9);
+
+
+		// $this->pdf->SetWidths(array(15,15,15,25,15,15,15,15,15,15,30));
+
+		$this->pdf->SetWidths(array(60,60));    
+
+		
+		$this->pdf->Row(array('Clase Nro','Clase'));
+
+
+
+		foreach ($data as $datos) {
+
+
+			$this->pdf->Row(array($datos['id_pensum'],$datos['pensum']));
+
+		}
+
+		$this->pdf->Cell(40,5,'Pensum Actualizado:','TB',0,'L','1');
+		// $this->pdf->Cell(40,5,'Pensum Actualizado: date("d-m-y")','B',0,'L',0);
+		$this->pdf->Cell(40,5, date("d-m-y"),'B',0,'L',0);
+		// $this->pdf->Cell(40,5,'By Jonathan Castro :','TB',0,'L','1');
+		$this->pdf->Cell(40,5, 'https://cursosprogramaciongratis.online/','B',0,'L',0);
+		$this->pdf->Ln(5);
+		
+
+
+		$this->pdf->Output("Pensum_Curso_Symfony5.pdf", 'D');
+
+	}
+
+	public function pdfYiiDos()
+	{ 		
+
+		$query = "SELECT * FROM pensums as p 		
+		left join courses as c on c.id_course = p.id_course			
+		where p.id_course = 4";
+
+		$result = $this->db->query($query);
+
+		$data = $result->getResultArray();
+
+
+		$this->pdf = new fpdf();	
+
+		$this->pdf->AddPage();
+
+		$this->pdf->AliasNbPages(); 
+
+		$this->pdf->SetTitle("Pensum Curso Yii 2");
+		$this->pdf->SetLeftMargin(15);
+		$this->pdf->SetRightMargin(15);
+		$this->pdf->SetFillColor(200,200,200); 
+
+		$this->pdf->SetFont('Arial', 'B', 9);
+
+
+		// $this->pdf->SetWidths(array(15,15,15,25,15,15,15,15,15,15,30));
+
+		$this->pdf->SetWidths(array(60,60));    
+
+		
+		$this->pdf->Row(array('Clase Nro','Clase'));
+
+
+
+		foreach ($data as $datos) {
+
+
+			$this->pdf->Row(array($datos['id_pensum'],$datos['pensum']));
+
+		}
+
+		$this->pdf->Cell(40,5,'Pensum Actualizado:','TB',0,'L','1');
+		// $this->pdf->Cell(40,5,'Pensum Actualizado: date("d-m-y")','B',0,'L',0);
+		$this->pdf->Cell(40,5, date("d-m-y"),'B',0,'L',0);
+		// $this->pdf->Cell(40,5,'By Jonathan Castro :','TB',0,'L','1');
+		$this->pdf->Cell(40,5, 'https://cursosprogramaciongratis.online/','B',0,'L',0);
+		$this->pdf->Ln(5);
+		
+
+
+		$this->pdf->Output("Pensum_Curso_Yii2.pdf", 'D');
+
+	}
+
+	public function pdfCakeCuatro()
+	{ 		
+
+		$query = "SELECT * FROM pensums as p 		
+		left join courses as c on c.id_course = p.id_course			
+		where p.id_course = 6";
+
+		$result = $this->db->query($query);
+
+		$data = $result->getResultArray();
+
+
+		$this->pdf = new fpdf();	
+
+		$this->pdf->AddPage();
+
+		$this->pdf->AliasNbPages(); 
+
+		$this->pdf->SetTitle("Pensum Curso Laravel 10");
+		$this->pdf->SetLeftMargin(15);
+		$this->pdf->SetRightMargin(15);
+		$this->pdf->SetFillColor(200,200,200); 
+
+		$this->pdf->SetFont('Arial', 'B', 9);
+
+
+		// $this->pdf->SetWidths(array(15,15,15,25,15,15,15,15,15,15,30));
+
+		$this->pdf->SetWidths(array(60,60));    
+
+		
+		$this->pdf->Row(array('Clase Nro','Clase'));
+
+
+
+		foreach ($data as $datos) {
+
+
+			$this->pdf->Row(array($datos['id_pensum'],$datos['pensum']));
+
+		}
+
+		$this->pdf->Cell(40,5,'Pensum Actualizado:','TB',0,'L','1');
+		// $this->pdf->Cell(40,5,'Pensum Actualizado: date("d-m-y")','B',0,'L',0);
+		$this->pdf->Cell(40,5, date("d-m-y"),'B',0,'L',0);
+		// $this->pdf->Cell(40,5,'By Jonathan Castro :','TB',0,'L','1');
+		$this->pdf->Cell(40,5, 'https://cursosprogramaciongratis.online/','B',0,'L',0);
+		$this->pdf->Ln(5);
+		
+
+
+		$this->pdf->Output("Pensum_Curso_CakePhp4.pdf", 'D');
+
+	}
+
+
+
+
 	
 	
 }

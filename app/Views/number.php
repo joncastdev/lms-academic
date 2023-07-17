@@ -53,7 +53,7 @@
 
 				</div>			
 
-				<a href="/" class="btn btn-light">Back</a>	
+				<a href="/certificates" class="btn btn-light">Back</a>	
 
 
 				<?php if($certificate_info): ?>
@@ -62,7 +62,11 @@
 
 						<a class="btn btn-danger" href="/pdfnumber/<?php echo $certificate_info[0]->id_certificate; ?>">
 							<span class="fas fa-download"></span>		
-						Descargar Pensum en formato PDF</a>				
+						Descargar Pensum en formato PDF</a>	
+
+						<a class="btn btn-primary" href="/register">
+							<span class="fas fa-arrow-right"></span>		
+						Empezar Hoy</a>			
 
 						<br>
 

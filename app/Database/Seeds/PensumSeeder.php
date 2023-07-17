@@ -593,7 +593,32 @@ class PensumSeeder extends Seeder
 				'pensum' => 'Widget Parte 3',
 				'video' => '16)newlarawidgets3.mp4',
 				'id_course' => 5								
-			],									
+			],
+			[				
+				'pensum' => 'Instalar',
+				'video' => '1)cakeinstalarnew.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Database',
+				'video' => '2)cakedatabasenew.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Migraciones Parte 1',
+				'video' => '3)cakemigrationnew.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Migraciones Parte 2',
+				'video' => '4)cakemigrations2new.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Semillas',
+				'video' => '5)cakeseedsnew.mp4',
+				'id_course' => 6								
+			],											
 		];
 
 		$this->db->table('pensums')->insertBatch($data);

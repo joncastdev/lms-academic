@@ -100,6 +100,9 @@ $routes->get('/pdfnumber/(.*)', 'Certificates::pdfNumber/$1');
 $routes->get('/pdfsymfonyseis', 'Home::pdfSymfonySeis');
 $routes->get('/pdfcodeignitercuatro', 'Home::pdfCodeigniterCuatro');
 $routes->get('/pdflaraveldiez', 'Home::pdfLaravelDiez');
+$routes->get('/pdfsymfonycinco', 'Home::pdfSymfonyCinco');
+$routes->get('/pdfyiidos', 'Home::pdfYiiDos');
+$routes->get('/pdfcakephpcuatro', 'Home::pdfCakeCuatro');
 
 // rutas free cursos
 $routes->get('/courses-free/(.*)', 'Home::show/$1');
