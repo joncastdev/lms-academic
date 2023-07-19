@@ -80,6 +80,9 @@ $routes->get('/orders/table', 'Users::orders_table');
 $routes->resource('users');
 
 $routes->get('/panel', 'Panel::index');
+$routes->get('/panel/profile', 'Panel::profile');
+$routes->post('/change', 'Panel::change');
+
 
 $routes->get('/courses', 'Courses::index');
 

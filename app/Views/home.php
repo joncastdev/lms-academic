@@ -123,7 +123,7 @@
 			</ul>
 
 			<h2>¿Cual es el precio?</h2>
-			<p>El precio de los cursos es <b>10$</b> por curso, con acceso al curso con contenido actual y nuevas actualizaciones</p>
+			<p>El precio de los cursos es <b class="fab fa-paypal btn btn-info btn-lg">10$</b> por curso, con acceso al curso con contenido actual y nuevas actualizaciones</p>
 
 			<h2>¿Cuáles son los métodos de pago?</h2>
 			<p>Actualmente solo se aceptan pagos en el procesador de pagos paypal</p>

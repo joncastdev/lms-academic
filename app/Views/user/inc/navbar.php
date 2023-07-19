@@ -62,10 +62,10 @@
 
       <!-- Dropdown - dropdown -->
       <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-        <!-- <a class="dropdown-item" href="<?php //echo base_url();?>login">
+        <a class="dropdown-item" href="/panel/profile">
           <i class="fas fa-fw fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>          
           Perfil
-        </a>  -->       
+        </a>        
         <a class="dropdown-item" href="/logout">
           <i class="fas fa-lock fa-sm fa-fw mr-2 text-gray-400"></i>
           <!-- <?php //echo lang('registrarse'); ?> -->

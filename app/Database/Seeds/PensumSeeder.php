@@ -618,7 +618,57 @@ class PensumSeeder extends Seeder
 				'pensum' => 'Semillas',
 				'video' => '5)cakeseedsnew.mp4',
 				'id_course' => 6								
-			],											
+			],
+			[				
+				'pensum' => 'CRUD',
+				'video' => '6)cakecrudnew.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Data de Prueba',
+				'video' => '7)caketestnew.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Autenticacion Parte 1',
+				'video' => '8)cakeauth1new.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Autenticacion Parte 2',
+				'video' => '9)cakeauth2new.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Autenticacion Parte 3',
+				'video' => '10)auth3new.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Rutas Parte 1',
+				'video' => '11)routes1new.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Rutas Parte 2',
+				'video' => '12)routes2new.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Mapas con Leaflet',
+				'video' => '13)mapnew.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Logearse',
+				'video' => '14)cakelogoutnew.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Semillas con Entidades',
+				'video' => '15)cakeauthseednew.mp4',
+				'id_course' => 6								
+			],													
 		];
 
 		$this->db->table('pensums')->insertBatch($data);
