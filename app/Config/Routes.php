@@ -107,6 +107,9 @@ $routes->get('/pdfsymfonycinco', 'Home::pdfSymfonyCinco');
 $routes->get('/pdfyiidos', 'Home::pdfYiiDos');
 $routes->get('/pdfcakephpcuatro', 'Home::pdfCakeCuatro');
 
+// rutas tutoriales free youtube
+$routes->get('/tutorials', 'Tutorials::index');
+
 // rutas free cursos
 $routes->get('/courses-free/(.*)', 'Home::show/$1');
 $routes->get('/videos-free/(.*)', 'Home::videos/$1');

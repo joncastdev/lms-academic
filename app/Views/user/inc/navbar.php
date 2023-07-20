@@ -22,6 +22,12 @@
    </a>
  </li>
 
+ <li class="nav-item">
+    <a class="nav-link" href="/tutorials">       
+     <span class="text-dark">Cursos Gratis</span>
+   </a>
+ </li>
+
  <!--    divider -->
  <div class="topbar-divider d-none d-sm-block"></div>
 

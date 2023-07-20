@@ -79,6 +79,10 @@
 
 						</div>
 
+						<div class="col-6">
+							<?php echo $this->include('errors/form/errors'); ?>
+						</div>
+
 						<!-- Main Wrapper -->
 
 						<!--End Top Nav -->
@@ -103,67 +107,67 @@
 
 								<!-- <h5>Cambiar Contraseña</h5> -->
 
-								<?php echo $this->include('errors/form/errors'); ?>
+
 
 								<?php echo form_open('change'); ?>						
 
 								<!-- <input type="password" name="password_old" placeholder="Contraseña actual" class="form-control">
 
-								<br> -->
+									<br> -->
 
-								<input type="password" name="password_new" placeholder="Nueva Contraseña" class="form-control">
+									<input type="password" name="password_new" placeholder="Nueva Contraseña" class="form-control">
 
-								<br>
+									<br>
 
-								<button type="submit" class="btn btn-info">Send</button>
-
-
-								<?php echo form_close(); ?>
+									<button type="submit" class="btn btn-info">Send</button>
 
 
+									<?php echo form_close(); ?>
 
 
 
 
 
+
+
+								</div>
 							</div>
 						</div>
+						<!-- ------------------------------------------------------------- -->
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>				
+
 					</div>
-					<!-- ------------------------------------------------------------- -->
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>				
 
 				</div>
 
-			</div>
+
+			<?php endif; ?>
 
 
-		<?php endif; ?>
+		</div>
+
+
+
+
+
 
 
 	</div>
-
-
-
-
-
-
-
-</div>
 </div>
 
 

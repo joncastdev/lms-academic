@@ -83,7 +83,7 @@
 
 								<h2 class="text-white offset-2">Curso <?php echo $certificate_info[0]->name; ?></h2>
 
-								<h2 class="text-white offset-2">Fecha <?php echo $certificate_info[0]->created_at; ?></h2>
+								<!-- <h2 class="text-white offset-2">Fecha <?php //echo $certificate_info[0]->created_at; ?></h2> -->
 
 								<h2 class="text-white offset-2">Fecha <?php echo date('d-m-Y',strtotime($certificate_info[0]->created_at)) ?></h2>
 
