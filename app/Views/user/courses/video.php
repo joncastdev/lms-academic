@@ -43,7 +43,12 @@
 
 					<?php if($courses_pensum[0]->id_course == 1): ?>
 
-							<a class="btn btn-primary" href="<?php echo base_url('public/uploads/pensum/Proyectos/Codeigniter4/codeigniter4_proyecto1.zip'); ?>">
+							<!-- <a class="btn btn-primary" href="<?php //echo base_url('public/uploads/pensum/Proyectos/Codeigniter4/codeigniter4_proyecto1.zip'); ?>">
+								<span class="fas fa-arrow-right"></span>	
+								Descargar Proyecto
+							</a> -->
+
+							<a class="btn btn-primary" href="/proyecto/codeigniter">
 								<span class="fas fa-arrow-right"></span>	
 								Descargar Proyecto
 							</a>	
@@ -52,28 +57,28 @@
 
 						<?php if($courses_pensum[0]->id_course == 2): ?>
 
-							<a class="btn btn-primary" href="<?php echo base_url('public/uploads/pensum/Proyectos/Symfony6/symfony6_proyecto1.zip'); ?>">
+								<a class="btn btn-primary" href="/proyecto/symfony">
 								<span class="fas fa-arrow-right"></span>	
 								Descargar Proyecto
-							</a>	
+							</a>
 
 						<?php endif; ?>
 
 						<?php if($courses_pensum[0]->id_course == 3): ?>
 
-							<a class="btn btn-primary" href="<?php echo base_url('public/uploads/pensum/Proyectos/Symfony5/symfony5_proyecto1.zip'); ?>">
+								<a class="btn btn-primary" href="/proyecto/sym">
 								<span class="fas fa-arrow-right"></span>	
 								Descargar Proyecto
-							</a>	
+							</a>
 
 						<?php endif; ?>
 
 						<?php if($courses_pensum[0]->id_course == 4): ?>
 
-							<a class="btn btn-primary" href="<?php echo base_url('public/uploads/pensum/Proyectos/Yii2/yii2_proyecto1.zip'); ?>">
+							<a class="btn btn-primary" href="/proyecto/yii">
 								<span class="fas fa-arrow-right"></span>	
 								Descargar Proyecto
-							</a>	
+							</a>
 
 						<?php endif; ?>
 	

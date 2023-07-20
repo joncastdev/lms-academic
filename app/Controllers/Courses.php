@@ -389,9 +389,9 @@ public function success()
 		//insert certificados
 		$created_at = date('y-m-d');
 
-        $updated_at = date('y-m-d');
+		$updated_at = date('y-m-d');
 
-		$querycert= "INSERT INTO certificates(id_course,created_at,updated_at) VALUES ('{$id_course}','{$created_at}','{$updated_at}')";
+		$querycert= "INSERT INTO certificates(id_course,id_user,created_at,updated_at) VALUES ('{$id_course}','{$id_user}','{$created_at}','{$updated_at}')";
 
 		$resultcert = $this->db->query($querycert);
 
@@ -427,7 +427,106 @@ public function cancel()
 
 	return view('user/courses/cancel',$data);
 
-}				
+}
+
+public function descargarCodeigniter()
+{
+
+	// http://localhost:8080/public/uploads/pensum/Proyectos/Codeigniter4/codeigniter4_proyecto1.zip
+
+	// $fileName = basename('fichero.txt');
+	// $filePath = 'files/'.$fileName;
+	$fileName = basename('codeigniter4_proyecto1.zip');
+		$filePath = 'uploads/pensum/Proyectos/Codeigniter4/'.$fileName;
+	if(!empty($fileName) && file_exists($filePath)){
+    // Define headers
+		header("Cache-Control: public");
+		header("Content-Description: File Transfer");
+		header("Content-Disposition: attachment; filename=$fileName");
+		header("Content-Type: application/zip");
+		header("Content-Transfer-Encoding: binary");
+
+    // Read the file
+		readfile($filePath);
+		exit;
+	}else{
+		echo 'The file does not exist.';
+	}
+
+
+}
+
+public function descargarSymfony()
+{
+
+	
+	$fileName = basename('symfony6_proyecto1.zip');
+		$filePath = 'uploads/pensum/Proyectos/Symfony6/'.$fileName;
+	if(!empty($fileName) && file_exists($filePath)){
+    // Define headers
+		header("Cache-Control: public");
+		header("Content-Description: File Transfer");
+		header("Content-Disposition: attachment; filename=$fileName");
+		header("Content-Type: application/zip");
+		header("Content-Transfer-Encoding: binary");
+
+    // Read the file
+		readfile($filePath);
+		exit;
+	}else{
+		echo 'The file does not exist.';
+	}
+
+
+}
+
+public function descargarSym()
+{
+
+	
+	$fileName = basename('symfony5_proyecto1.zip');
+		$filePath = 'uploads/pensum/Proyectos/Symfony5/'.$fileName;
+	if(!empty($fileName) && file_exists($filePath)){
+    // Define headers
+		header("Cache-Control: public");
+		header("Content-Description: File Transfer");
+		header("Content-Disposition: attachment; filename=$fileName");
+		header("Content-Type: application/zip");
+		header("Content-Transfer-Encoding: binary");
+
+    // Read the file
+		readfile($filePath);
+		exit;
+	}else{
+		echo 'The file does not exist.';
+	}
+
+
+}
+
+public function descargarYii()
+{
+
+	
+	$fileName = basename('yii2_proyecto1.zip');
+		$filePath = 'uploads/pensum/Proyectos/Yii2/'.$fileName;
+	if(!empty($fileName) && file_exists($filePath)){
+    // Define headers
+		header("Cache-Control: public");
+		header("Content-Description: File Transfer");
+		header("Content-Disposition: attachment; filename=$fileName");
+		header("Content-Type: application/zip");
+		header("Content-Transfer-Encoding: binary");
+
+    // Read the file
+		readfile($filePath);
+		exit;
+	}else{
+		echo 'The file does not exist.';
+	}
+
+
+}						
 
 }
 

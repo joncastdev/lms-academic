@@ -61,12 +61,20 @@ class Certificates extends BaseController
 		// $email = $this->session->get('email');
 
 		// en este ejemplo hay que usar right join es un join diferente
-		$query = "SELECT * FROM users as u                     
-		left join users_courses as uc on u.id_user = uc.id_user
-		left join courses as c on c.id_course = uc.id_course
-		right join certificates as ce on ce.id_course = c.id_course		
+		// $query = "SELECT * FROM users as u                     
+		// left join users_courses as uc on u.id_user = uc.id_user
+		// left join courses as c on c.id_course = uc.id_course
+		// right join certificates as ce on ce.id_course = c.id_course		
+		// where u.is_buyer = 1 and ce.id_certificate = '{$cert_number}'";
+
+
+		// un query mas simple para obtener solo 1 certificado, por que con la tabla users_users es muchos a muchos
+		$query = "SELECT * FROM users as u
+		left join certificates as ce on ce.id_user = u.id_user                  
+		left join courses as c on c.id_course = ce.id_course			
 		where u.is_buyer = 1 and ce.id_certificate = '{$cert_number}'";
 
+		
 		// con left join no acepta la ultima tabla
 		// $query = "SELECT * FROM certificates as c                     
 		//  left join users_courses as uc on u.id_user = uc.id_user
@@ -79,6 +87,8 @@ class Certificates extends BaseController
 		// $data['certificate_info'] = $result->getRow();
 
 		$data['certificate_info'] = $result->getResult();
+
+		$data['certificate_get'] = $this->request->getGet('certificate');
 
 		// print_r($data);
 

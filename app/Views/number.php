@@ -112,7 +112,7 @@
 					<br>
 					<br>
 
-					<h1 class="bg-danger text-white">No es estudiante de esta academia</h1>
+					<h1 class="bg-danger text-white">404 no encontrado - Certificado Nro # <?php echo $certificate_get; ?></h1>
 
 					<br>
 					<br>

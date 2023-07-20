@@ -76,7 +76,7 @@
 
 			<h1>Cursos de Programación Gratis Online</h1>
 
-			<?php echo $this->include('inc/ads_top') ?>
+			
 
 			<p><b>Cursos de Programación Gratis Online</b> con diplomados y certificados en el año 2023, en este sitio web encontraras libros <b>PDF</b> (ebook digitales), <b>códigos fuentes</b> y <b>podcast</b></p>
 

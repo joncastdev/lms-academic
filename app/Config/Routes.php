@@ -110,6 +110,12 @@ $routes->get('/pdfcakephpcuatro', 'Home::pdfCakeCuatro');
 // rutas tutoriales free youtube
 $routes->get('/tutorials', 'Tutorials::index');
 
+// rutas para descargar proyectos
+$routes->get('/proyecto/codeigniter', 'Courses::descargarCodeigniter');
+$routes->get('/proyecto/symfony', 'Courses::descargarSymfony');
+$routes->get('/proyecto/sym', 'Courses::descargarSym');
+$routes->get('/proyecto/yii', 'Courses::descargarYii');
+
 // rutas free cursos
 $routes->get('/courses-free/(.*)', 'Home::show/$1');
 $routes->get('/videos-free/(.*)', 'Home::videos/$1');
