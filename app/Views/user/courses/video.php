@@ -81,6 +81,24 @@
 							</a>
 
 						<?php endif; ?>
+
+						<?php if($courses_pensum[0]->id_course == 5): ?>
+
+							<a class="btn btn-primary" href="/proyecto/laravel">
+								<span class="fas fa-arrow-right"></span>	
+								Descargar Proyecto
+							</a>
+
+						<?php endif; ?>
+
+						<?php if($courses_pensum[0]->id_course == 6): ?>
+
+							<a class="btn btn-primary" href="/proyecto/cake">
+								<span class="fas fa-arrow-right"></span>	
+								Descargar Proyecto
+							</a>
+
+						<?php endif; ?>
 	
 
 						<?php foreach ($courses_pensum as $pensums): ?>	

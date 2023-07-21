@@ -40,10 +40,15 @@ class Panel extends BaseController
 
 		$email = $this->session->get('email');
 
-		$query = "SELECT c.id_course FROM users as u                     
-		left join users_courses as uc on u.id_user = uc.id_user
-		left join courses as c on c.id_course = uc.id_course		
-		where u.email = '{$email}' and u.is_buyer = 1";
+		// $query = "SELECT c.id_course FROM users as u                     
+		// left join users_courses as uc on u.id_user = uc.id_user
+		// left join courses as c on c.id_course = uc.id_course		
+		// where u.email = '{$email}' and u.is_buyer = 1";
+
+		$query = "SELECT c.id_course FROM users as u
+		left join certificates as ce on ce.id_user = u.id_user                  
+		left join courses as c on c.id_course = ce.id_course			
+		where u.is_buyer = 1 and u.email = '{$email}'";
 
 
 
@@ -69,10 +74,15 @@ class Panel extends BaseController
 		// $data['users_courses'] = $result->getResultObject();
 		// $data['users_courses_val'] = $result->getRow();
 
-		$query2 = "SELECT ce.id_certificate FROM users as u                     
-		left join users_courses as uc on u.id_user = uc.id_user
-		left join courses as c on c.id_course = uc.id_course
-		right join certificates as ce on ce.id_course = c.id_course		
+		// $query2 = "SELECT ce.id_certificate FROM users as u                     
+		// left join users_courses as uc on u.id_user = uc.id_user
+		// left join courses as c on c.id_course = uc.id_course
+		// right join certificates as ce on ce.id_course = c.id_course		
+		// where u.is_buyer = 1 and u.email = '{$email}'";
+
+		$query2 = "SELECT ce.id_certificate FROM users as u
+		left join certificates as ce on ce.id_user = u.id_user                  
+		left join courses as c on c.id_course = ce.id_course			
 		where u.is_buyer = 1 and u.email = '{$email}'";
 		
 
@@ -185,7 +195,7 @@ class Panel extends BaseController
 
 				// $this->email_password($get_email->email,$temp_pass);
 
-				 $this->session->setFlashdata('password_change','New Password Set');
+				$this->session->setFlashdata('password_change','New Password Set');
 
 				return redirect()->to('/panel/profile');
 
@@ -205,6 +215,46 @@ class Panel extends BaseController
 
 		}
 
-		}		
+	}
+
+	public function certificateUsers()
+	{
+
+		$data['tittle'] = 'Certificados';
+
+		$data['session'] = $this->session;
+
+		$email = $this->session->get('email');
+
+		// $query = "SELECT ce.id_certificate, ce.created_at, u.first_name, u.last_name, c.name FROM users as u                     
+		// left join users_courses as uc on u.id_user = uc.id_user
+		// left join courses as c on c.id_course = uc.id_course
+		// right join certificates as ce on ce.id_course = c.id_course		
+		// where u.is_buyer = 1 and u.email = '{$email}'";
+
+		$query = "SELECT ce.id_certificate, ce.created_at, u.first_name, u.last_name, c.name FROM users as u
+		left join certificates as ce on ce.id_user = u.id_user                  
+		left join courses as c on c.id_course = ce.id_course			
+		where u.is_buyer = 1 and u.email = '{$email}'";
+		
+
+		$result = $this->db->query($query);
+
+		// $data['certificate_info'] = $result->getRow();
+
+		$data['certificates'] = $result->getResult();
+
+		// print_r($data);
+
+		// $total_certificate = count($data_certificate);
+
+		// $data['certificates'] = $total_certificate;
+
+
+		return view('user/certificate',$data);
 
 	}
+
+
+
+}

@@ -82,6 +82,7 @@ $routes->resource('users');
 $routes->get('/panel', 'Panel::index');
 $routes->get('/panel/profile', 'Panel::profile');
 $routes->post('/change', 'Panel::change');
+$routes->get('/panel/certificates', 'Panel::certificateUsers');
 
 
 $routes->get('/courses', 'Courses::index');
@@ -115,6 +116,8 @@ $routes->get('/proyecto/codeigniter', 'Courses::descargarCodeigniter');
 $routes->get('/proyecto/symfony', 'Courses::descargarSymfony');
 $routes->get('/proyecto/sym', 'Courses::descargarSym');
 $routes->get('/proyecto/yii', 'Courses::descargarYii');
+$routes->get('/proyecto/laravel', 'Courses::descargarLaravel');
+$routes->get('/proyecto/cake', 'Courses::descargarCake');
 
 // rutas free cursos
 $routes->get('/courses-free/(.*)', 'Home::show/$1');
