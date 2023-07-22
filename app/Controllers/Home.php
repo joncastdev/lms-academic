@@ -386,7 +386,7 @@ class Home extends BaseController
 
 		$this->pdf->AliasNbPages(); 
 
-		$this->pdf->SetTitle("Pensum Curso Laravel 10");
+		$this->pdf->SetTitle("Pensum Curso CakePhp 4");
 		$this->pdf->SetLeftMargin(15);
 		$this->pdf->SetRightMargin(15);
 		$this->pdf->SetFillColor(200,200,200); 

@@ -189,7 +189,7 @@
 
 									<?php if($certificates == null): ?>
 
-									<h2 class="bg-danger">No Tienes Certificados</h2>
+									<h2 class="bg-danger text-white">No Tienes Certificados</h2>
 
 										<?php endif; ?>		
 

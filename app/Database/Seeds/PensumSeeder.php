@@ -595,6 +595,61 @@ class PensumSeeder extends Seeder
 				'id_course' => 5								
 			],
 			[				
+				'pensum' => 'API Rest Laravel 9 y 10',
+				'video' => '1)instalar_laravel9end.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Rutas de una API',
+				'video' => '2)rutas_laravel9_end.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Controladores',
+				'video' => '3)controllers_laravel9_end.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Migraciones',
+				'video' => '4)migraciones_laravel9end.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Semillas',
+				'video' => '5)seeds_laravel9end.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Configurar Sanctum',
+				'video' => '6)sactum_laravel9end.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Peticiones Get',
+				'video' => '7)show_laravel_end.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Peticiones Post',
+				'video' => '8)post_laravel_end.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Peticiones Put',
+				'video' => '9)update_laravel_end.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Peticiones Delete',
+				'video' => '10)delete_laravel_end.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Joins',
+				'video' => '11)joins_laravel_end.mp4',
+				'id_course' => 5								
+			],			
+			[				
 				'pensum' => 'Instalar',
 				'video' => '1)cakeinstalarnew.mp4',
 				'id_course' => 6								

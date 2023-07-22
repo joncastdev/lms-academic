@@ -100,6 +100,9 @@ $routes->get('/certificates', 'Certificates::index');
 $routes->get('/number', 'Certificates::number');
 $routes->get('/pdfnumber/(.*)', 'Certificates::pdfNumber/$1');
 
+// rutas de graduados
+$routes->get('/graduates', 'Graduates::index');
+
 // rutas pdf pensum free
 $routes->get('/pdfsymfonyseis', 'Home::pdfSymfonySeis');
 $routes->get('/pdfcodeignitercuatro', 'Home::pdfCodeigniterCuatro');
