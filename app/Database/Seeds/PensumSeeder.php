@@ -648,6 +648,46 @@ class PensumSeeder extends Seeder
 				'pensum' => 'Joins',
 				'video' => '11)joins_laravel_end.mp4',
 				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'API de Stripe',
+				'video' => '12)setstripelara9.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Peticiones Get con Stripe',
+				'video' => '13)stripegetlara9.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Peticiones Delete con Stripe',
+				'video' => '14)stripedeletelara9.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Usar Nodejs para la SPA',
+				'video' => '40)nodelara9.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Componentes en Vuejs',
+				'video' => '41)componentslara9.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Autenticando con Vue y Axios',
+				'video' => '42)authlara9.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Consumir Servicios de la API',
+				'video' => '43)endpoinstlara9.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'CORS con Ejemplo',
+				'video' => '44)corslara9.mp4',
+				'id_course' => 5								
 			],			
 			[				
 				'pensum' => 'Instalar',
@@ -723,7 +763,112 @@ class PensumSeeder extends Seeder
 				'pensum' => 'Semillas con Entidades',
 				'video' => '15)cakeauthseednew.mp4',
 				'id_course' => 6								
-			],													
+			],
+			[				
+				'pensum' => 'Excepciones',
+				'video' => '16)cakeexceptionsnew.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Stripe API',
+				'video' => '17)cakesetearstripenew.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Listar Customers',
+				'video' => '18)cakeallcustomersnew.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Show Customers',
+				'video' => '19)cakeshownew.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Delete Customers',
+				'video' => '20)cakedeletenew.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Mas sobre Seeders',
+				'video' => '40)cakemodseednew.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Insertar Users',
+				'video' => '41)cakeuseraddnew.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Autorizacion',
+				'video' => '42)cakeautorinew.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Politicas',
+				'video' => '43)cakepoliciesnew.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Retringir Acceso 403',
+				'video' => '44)cakeaccesnew.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Proyecto CRUD Relacional',
+				'video' => '200)cakemigrations.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Crear el CRUD',
+				'video' => '201)cakecrud.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Agregando la Data',
+				'video' => '202)cakeseeds.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Entidades y Relaciones',
+				'video' => '203)cakeentity.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Relacion Uno a Muchos y Muchos a Muchos',
+				'video' => '204)cakerelation.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Cakephp 4.4 lo Nuevo',
+				'video' => '100)newcake4.4.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Entendiendo el Scope',
+				'video' => '101)newcakeaprefix.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Actualizar proyectos de 4.3 a 4.4',
+				'video' => '102)newcakeupgrade.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Crear una API REST',
+				'video' => '103)newcakeapi.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Deploy Parte 1',
+				'video' => '30)newcakedeploy1.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Deploy Parte 2',
+				'video' => '31)newcakedeploy2.mp4',
+				'id_course' => 6								
+			],														
 		];
 
 		$this->db->table('pensums')->insertBatch($data);
