@@ -2,7 +2,7 @@
 
 <?php echo $this->section('meta') ?>
 
-
+<!-- <script src="/assets/js/graduates.js"></script>  -->
 
 <?php echo $this->endSection() ?>
 
@@ -11,7 +11,7 @@
 
 
 
-<div class="container">
+<div class="container" >
 
 	<br>
 
@@ -45,111 +45,132 @@
 
 				<?php if($users): ?>
 
-									
-
-										
-
-										<table class="table table-responsive table-striped" id="myTable">				
-				<thead>
-					<tr>
-						<th>Imagen</th>
-						<th>Nombre</th>
-						<th>Apellido</th>
-						<th>Cursos</th>
-						<th>Red Social</th>								
-					</tr>
-				</thead>
-				<tbody>
-
-					<?php foreach ($users  as $user ): ?>
-						
-
-						<tr>
-							<td><?php echo $user->img; ?></td>
-							<td><?php echo $user->first_name; ?></td>
-							<td><?php echo $user->last_name; ?></td>
-							<td><?php echo $user->linkedin; ?></td>
-
-							<!-- <td><?php //echo $certificate->name; ?></td>	 -->						
-							<!-- <td><?php //echo date('d-m-Y',strtotime($certificate->created_at)) ?></td>	 -->					
-							<td>
-								
-							</td>
-						</tr>
-
-					<?php endforeach ?>
-
-				</tbody>
-			</table>
-										
-									
-										
-
-										<?php endif; ?>
 
 
-									<?php if($users == null): ?>
-
-									<h2 class="bg-danger text-white">No Tenemos Graduados</h2>
-
-										<?php endif; ?>		
-
-										
-									</div>
-								</div>
-							</div>
-							<!-- ------------------------------------------------------------- -->
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>				
-
-						</div>
-
-					</div>
 
 
-			
+					<table class="table table-responsive table-striped" id="myTable">				
+						<thead>
+							<tr>
+								<!-- <th>Imagen</th> -->
+								<th>Nombre</th>
+								<th>Apellido</th>
+								<th>Cursos</th>
+								<th>Red Social</th>								
+							</tr>
+						</thead>
+						<tbody>
+
+							<?php
+							// $data = array_merge($users,$certificates);
+
+							// print_r($data);
+
+							// $result = json_decode($data, true);
+
+							// exit;
+							 ?>
+
+							<?php foreach ($users  as $user ): ?>
+
+								<!-- <?php 
+
+								$result //= json_decode($user, true);
+								?> -->
+
+							<!-- 	<td><?php //print_r($user); ?></td> -->
+
+
+								<tr>
+									<!-- 	<td><?php //echo $user->img; ?></td> -->
+									<td><?php print_r($user->first_name); ?></td>
+								 	- <td><?php echo $user->last_name; ?></td> 
+									<td><select class="form-control country" name="country" id="country" >
+										<option id="option" class="option" value="<?php echo $user->id_user; ?>"><?php echo $user->id_user; ?></option>       
+									</select></td>
+									<td><?php echo $user->linkedin; ?></td> 
+
+									<!-- <td><?php //echo $certificate->name; ?></td>	 -->						
+									<!-- <td><?php //echo date('d-m-Y',strtotime($certificate->created_at)) ?></td>	 -->					
+									<td>
+
+									</td>
+								</tr>
+
+							<?php endforeach ?>
+
+						</tbody>
+					</table>
+
+
+
+
+				<?php endif; ?>
+
+
+				<?php if($users == null): ?>
+
+					<h2 class="bg-danger text-white">No Tenemos Graduados</h2>
+
+				<?php endif; ?>		
 
 
 			</div>
-
 		</div>
-
 	</div>
+	<!-- ------------------------------------------------------------- -->
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>				
+
+</div>
+
+</div>
 
 
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>		
 
 
 
-	<?php echo $this->include('inc/footer') ?>
+</div>
+
+</div>
+
+</div>
 
 
-	<?php echo $this->endSection() ?>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>		
+
+<script src="/assets/js/graduates.js"></script> 
+
+
+<?php echo $this->include('inc/footer') ?>
+
+
+<?php echo $this->endSection() ?>

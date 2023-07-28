@@ -45,11 +45,11 @@ class Graduates extends BaseController
 		// where u.is_buyer = 1 GROUP BY u.img, u.first_name,u.last_name, u.linkedin, c.name
 		// ";
 
-		// $query = "SELECT  DISTINCT u.id_user, u.img, u.first_name, u.last_name, u.linkedin FROM users as u                     
-		// left join users_courses as uc on u.id_user = uc.id_user
-		// left join courses as c on c.id_course = uc.id_course		
-		// where u.is_buyer = 1 
-		// ";
+		$query = "SELECT  DISTINCT u.id_user, u.img, u.first_name, u.last_name, u.linkedin FROM users as u                     
+		left join users_courses as uc on u.id_user = uc.id_user
+		left join courses as c on c.id_course = uc.id_course		
+		where u.is_buyer = 1 
+		";
 
 		// $query = "SELECT  DISTINCT u.id_user, u.img, u.first_name, u.last_name, u.linkedin
 		// {
@@ -62,11 +62,11 @@ class Graduates extends BaseController
 		// https://www.mysqltutorial.org/mysql-subquery/
 		// https://sebhastian.com/mysql-operand-should-contain-1-column/
 
-		$query = "SELECT * FROM users as u
-		WHERE u.is_buyer = 1 
-		 IN
-		(SELECT * FROM courses as c);     
-		";
+		// $query = "SELECT * FROM users as u
+		// WHERE u.is_buyer = 1 
+		//  IN
+		// (SELECT * FROM courses as c);     
+		// ";
 
 
 
@@ -79,15 +79,17 @@ class Graduates extends BaseController
 
 		// print_r($id_user);
 
-		print_r($data_users);
+		// print_r($data_users);
 
-		exit;
+		// exit;
 
 			// print_r(count($data_courses));
 
 		$total_users = count($data_users);
 
 		$data['users'] = $data_users;
+
+		// $users = $data_users;
 
 		// $query2 = "SELECT c.name FROM users as u                     
 		// left join users_courses as uc on u.id_user = uc.id_user
@@ -109,8 +111,73 @@ class Graduates extends BaseController
 
 		// $data['users'] = $total_users;
 
+
+
+		$query2 = "SELECT c.id_course,c.name FROM users as u
+		left join certificates as ce on ce.id_user = u.id_user                  
+		left join courses as c on c.id_course = ce.id_course			
+		where u.is_buyer = 1 and u.email = 'jose@gmail.com'";
+
+
+		$result2 = $this->db->query($query2);
+
+		$certificates = $result2->getResultObject();
+
+		// $data['certificates'] = $result2->getResultObject();
+
+		// print_r($certificate);
+
+		// print_r($data);
+
+		// // array_merge(array1)
+
+		// exit;
+
+		// $data = [
+		// 	'users'   => $users,
+		// 	'certificates' => $certificates,
+		// 	'tittle' => 'graduados',			
+		// ];
+
+
 		return view('graduates',$data);
+
+		// return view('graduates',[$data,$users,$certificates]);
 	}
+
+
+
+	public function select()
+	{
+
+		// $db      = \Config\Database::connect();
+		// $builder = $db->table('countrys');	
+
+		$country = $this->request->getGet('countryVal');
+
+		// $builder = $db->table('countrys AS A');
+		// $builder->select('B.id_state,B.state');
+		// $builder->join('states AS B', 'A.id_country = B.id_country');
+		// $builder->where('A.id_country', $country);
+		// $query = $builder->get()->getResult();	
+		// print_r($query);
+
+		$query2 = "SELECT c.id_course,c.name FROM users as u
+		left join certificates as ce on ce.id_user = u.id_user                  
+		left join courses as c on c.id_course = ce.id_course			
+		where u.is_buyer = 1 and u.id_user = '{$country}'";
+
+
+		$result2 = $this->db->query($query2);
+
+		$query = $result2->getResultObject();
+
+	
+
+		return $this->response->setJSON($country);
+		
+	}
+
 
 
 	

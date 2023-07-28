@@ -7,56 +7,60 @@
 
 <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"> -->
 
-	<!-- <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script> -->
+<!-- <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script> -->
 
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script> 
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.11.0/sweetalert2.css"/>
 
 <style type="text/css">
 	p {
 		font-size: 18px;
 	}
 	.main-content .item img{
-				display: block;
-				width: 100%;
-				height: auto;     
-				margin-bottom: 20px;
-				border-radius: 12px;       
-			}
+		display: block;
+		width: 100%;
+		height: auto;     
+		margin-bottom: 20px;
+		border-radius: 12px;       
+	}
 
-			.main-content {
-				position: relative;
-			}
+	.main-content {
+		position: relative;
+	}
 
-			.custom-nav
-			{
-				position: absolute;
-				top: 20%;
-				left: 0;
-				right: 0;
-			}
+	.custom-nav
+	{
+		position: absolute;
+		top: 20%;
+		left: 0;
+		right: 0;
+	}
 
-			.owl-prev, .owl-next {
-				position: absolute;
-				height: 100px;
-				color: inherit;
-				background: none;
-				border: none;
-				z-index: 100;
-			}
+	.owl-prev, .owl-next {
+		position: absolute;
+		height: 100px;
+		color: inherit;
+		background: none;
+		border: none;
+		z-index: 100;
+	}
 
-			i {
-				font-size: 2.5rem;
-				color: white;
-			}
+	i {
+		font-size: 2.5rem;
+		color: white;
+	}
 
 
-			.owl-prev {
-				left: 0;
-			}
+	.owl-prev {
+		left: 0;
+	}
 
-			.owl-next {
-				right: 0;
-			}
+	.owl-next {
+		right: 0;
+	}
 
 	
 </style>
@@ -137,104 +141,104 @@
 
 				<!-- <h2>Próximos Cursos:</h2> -->
 
-		<!-- <div class="container-fluid"> -->
+				<!-- <div class="container-fluid"> -->
 
-			<div class="col-md-8 offset-2">
+					<div class="col-md-8 offset-2">
 
-					<h3 class="bg-info text-white text-center">Próximos Cursos:</h3>
+						<h3 class="bg-info text-white text-center">Próximos Cursos:</h3>
 
-				<div class="main-content">
-				
-					<div class="owl-carousel owl-theme">
-						<div class="item">
-							<img src="<?php echo base_url();?>/assets/img/curso_basededatos.png" alt="Curso base de datos profesional">
+						<div class="main-content">
+
+							<div class="owl-carousel owl-theme">
+								<div class="item">
+									<img src="<?php echo base_url();?>/assets/img/curso_basededatos.png" alt="Curso base de datos profesional">
+								</div>
+								<div class="item">
+									<img src="<?php echo base_url();?>/assets/img/curso_laravel10_google.png" alt="Curso Laravel 10 Extensiones Google Chrome">
+								</div>
+								<div class="item">
+									<img src="<?php echo base_url();?>/assets/img/curso_autodesk.png" alt="Curso Autodesk API con Python">
+								</div>
+								<div class="item">
+									<img src="<?php echo base_url();?>/assets/img/curso_cakephp_tienda.png" alt="Tiendas Online CakePHP 4">
+								</div>						
+							</div>
+							<div class="owl-theme">
+								<div class="owl-controls">
+									<div class="custom-nav owl-nav"></div>
+								</div>
+							</div>	
+
+
 						</div>
-						<div class="item">
-							<img src="<?php echo base_url();?>/assets/img/curso_laravel10_google.png" alt="Curso Laravel 10 Extensiones Google Chrome">
-						</div>
-						<div class="item">
-							<img src="<?php echo base_url();?>/assets/img/curso_autodesk.png" alt="Curso Autodesk API con Python">
-						</div>
-						<div class="item">
-							<img src="<?php echo base_url();?>/assets/img/curso_cakephp_tienda.png" alt="Tiendas Online CakePHP 4">
-						</div>						
+
 					</div>
-					<div class="owl-theme">
-						<div class="owl-controls">
-							<div class="custom-nav owl-nav"></div>
-						</div>
-					</div>	
 
-					
+					<!-- </div> -->
+
 				</div>
 
-			</div>
-
-			<!-- </div> -->
-
-		</div>
-
-		<br>
+				<br>
 
 
-			<br>
-			<h2>Cursos Disponibles:</h2>
+				<br>
+				<h2>Cursos Disponibles:</h2>
 
-			<a class="btn btn-danger" href="/pdfsymfonyseis">
-				<span class="fas fa-download"></span>		
-			Descargar Pensum</a>
+				<a class="btn btn-danger" href="/pdfsymfonyseis">
+					<span class="fas fa-download"></span>		
+				Descargar Pensum</a>
 
-			<a class="btn btn-danger" href="/pdfcodeignitercuatro">
-				<span class="fas fa-download"></span>		
-			Descargar Pensum</a>
+				<a class="btn btn-danger" href="/pdfcodeignitercuatro">
+					<span class="fas fa-download"></span>		
+				Descargar Pensum</a>
 
 
 
-			<div class="row">
+				<div class="row">
 
-				<?php echo $this->include('inc/ads_mid') ?>
+					<?php echo $this->include('inc/ads_mid') ?>
 
-				<?php foreach ($all_courses as $coursesb): ?>	
-					<div class="col-sm-4">
+					<?php foreach ($all_courses as $coursesb): ?>	
+						<div class="col-sm-4">
 
-						<div class="card">
+							<div class="card">
 
-							<img class="img-fluid" src="assets/img/curso_codeigniter4.png" alt="Curso CodeIgniter 4">
+								<img class="img-fluid" src="assets/img/curso_codeigniter4.png" alt="Curso CodeIgniter 4">
 
-							<div class="card-header">
+								<div class="card-header">
 
-								<h3><?php echo $coursesb->name; ?></h3>
+									<h3><?php echo $coursesb->name; ?></h3>
 
-							</div>
+								</div>
 
-							<div class="card-body">
-								<br>					
+								<div class="card-body">
+									<br>					
 
-								<h4>Disponible en Academia Online (Gratis)</h4>					
+									<h4>Disponible en Academia Online (Gratis)</h4>					
 
-								<div class="row">
+									<div class="row">
 
-									<div class="col-6">
-										<a href="/courses-free/<?php echo $coursesb->id_course; ?>" class="btn btn-info">Empezar el Curso</a>
-									</div>
+										<div class="col-6">
+											<a href="/courses-free/<?php echo $coursesb->id_course; ?>" class="btn btn-info">Empezar el Curso</a>
+										</div>
 
-									<div class="col-6">
+										<div class="col-6">
 
-										<a class="btn btn-danger" href="/pdfsymfonyseis">
-											<span class="fas fa-download"></span>		
-										Descargar Pensum</a>
+											<a class="btn btn-danger" href="/pdfsymfonyseis">
+												<span class="fas fa-download"></span>		
+											Descargar Pensum</a>
 
-									</div>
+										</div>
 
-								</div>	
+									</div>	
+
+								</div>
 
 							</div>
 
 						</div>
 
-					</div>
-
-					<?php echo $this->include('inc/ads_down') ?>
+						<?php echo $this->include('inc/ads_down') ?>
 
 
 			<!-- <div class="col-sm-4">
@@ -552,7 +556,34 @@
 		});
 
 	</script>			
-	 -->
+-->
+
+<script type="text/javascript">
+
+	setTimeout(function() {
+		modalBlock();        
+	},4000);      
+
+	async function modalBlock()
+	{
+
+		swal({
+			icon: 'info',			   
+			title: 'Cursos a 7.99$',
+			text: 'Descuentos de Fin de Mes, Promoción Valida hasta el 31 de Julio.',		
+			showCancelButton: true,
+			showConfirmButton: true,
+			dangerMode: true,		
+		}).then(function() {      
+
+
+		}, function(err) {   
+
+		});
+
+	}
+
+</script> 
 
 
 <?php echo $this->include('inc/footer') ?>
