@@ -162,10 +162,15 @@ class Graduates extends BaseController
 		// $query = $builder->get()->getResult();	
 		// print_r($query);
 
-		$query2 = "SELECT c.id_course,c.name FROM users as u
-		left join certificates as ce on ce.id_user = u.id_user                  
-		left join courses as c on c.id_course = ce.id_course			
-		where u.is_buyer = 1 and u.id_user = '{$country}'";
+		// $query2 = "SELECT c.id_course,c.name FROM users as u
+		// left join certificates as ce on ce.id_user = u.id_user                  
+		// left join courses as c on c.id_course = ce.id_course			
+		// where u.is_buyer = 1 and u.id_user = '{$country}'";
+
+		$query2 = "SELECT c.id_course,c.name FROM users as u                     
+		left join users_courses as uc on u.id_user = uc.id_user
+		left join courses as c on c.id_course = uc.id_course		
+		where u.is_buyer = 1  and u.id_user = '{$country}'";
 
 
 		$result2 = $this->db->query($query2);
@@ -174,7 +179,9 @@ class Graduates extends BaseController
 
 	
 
-		return $this->response->setJSON($country);
+		// return $this->response->setJSON($country);
+
+			return $this->response->setJSON($query);
 		
 	}
 

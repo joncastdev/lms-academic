@@ -123,6 +123,9 @@ $routes->get('/proyecto/yii', 'Courses::descargarYii');
 $routes->get('/proyecto/laravel', 'Courses::descargarLaravel');
 $routes->get('/proyecto/cake', 'Courses::descargarCake');
 
+// rutas articulos
+$routes->get('/como-aprender-a-programar', 'Home::learn');
+
 // rutas free cursos
 $routes->get('/courses-free/(.*)', 'Home::show/$1');
 $routes->get('/videos-free/(.*)', 'Home::videos/$1');

@@ -423,6 +423,14 @@ class Home extends BaseController
 
 	}
 
+	public function learn()
+	{
+		$data['tittle'] = 'Cómo aprender a programar';
+		
+
+		return view('learn',$data);
+	}
+
 
 
 

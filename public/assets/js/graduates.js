@@ -26,12 +26,16 @@
 
 
 // $('#country').change(function(event) {
-	// $('.country').click(function(event) {
-		$('#country').click(function(event) {
+	$('#country').click(function(event) {
+		// $('#country').click(function(event) {
 
-			// let countryVal = $(".country").val();
+			let countryVal = $("#country").val();
 
-		let countryVal = $("#country").val();
+			$("#country").on("focus", function() {
+				$("#country").val("");
+			});
+
+		// let countryVal = $("#country").val();
 
 		$.get(BASE_URL + '/select',{countryVal: countryVal}, function(data){
 
@@ -51,7 +55,7 @@
 
 
      
-     // $("#option").remove();
+     $("#option").remove();
 
      // $("#country").remove();
 
