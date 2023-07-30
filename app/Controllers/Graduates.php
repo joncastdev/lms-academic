@@ -6,10 +6,14 @@ use App\Traits\MiddlewareAuth;
 
 use App\Libraries\Fpdf;
 
+use CodeIgniter\API\ResponseTrait;
+
 class Graduates extends BaseController
 {
 
 	use MiddlewareAuth;
+
+	use ResponseTrait;
 
 	protected $session;
 
@@ -45,10 +49,11 @@ class Graduates extends BaseController
 		// where u.is_buyer = 1 GROUP BY u.img, u.first_name,u.last_name, u.linkedin, c.name
 		// ";
 
-		$query = "SELECT  DISTINCT u.id_user, u.img, u.first_name, u.last_name, u.linkedin FROM users as u                     
+		$query = "SELECT  DISTINCT u.id_user, u.img, u.first_name, u.last_name, u.linkedin, co.country,co.lat, co.long FROM users as u
+		left join countrys as co on co.id_country = u.id_country	                     
 		left join users_courses as uc on u.id_user = uc.id_user
 		left join courses as c on c.id_course = uc.id_course		
-		where u.is_buyer = 1 
+		where u.is_buyer = 1 and u.id_role = 2
 		";
 
 		// $query = "SELECT  DISTINCT u.id_user, u.img, u.first_name, u.last_name, u.linkedin
@@ -116,7 +121,7 @@ class Graduates extends BaseController
 		$query2 = "SELECT c.id_course,c.name FROM users as u
 		left join certificates as ce on ce.id_user = u.id_user                  
 		left join courses as c on c.id_course = ce.id_course			
-		where u.is_buyer = 1 and u.email = 'jose@gmail.com'";
+		where u.is_buyer = 1 and u.id_user = 'jose@gmail.com'";
 
 
 		$result2 = $this->db->query($query2);
@@ -185,6 +190,43 @@ class Graduates extends BaseController
 		
 	}
 
+	public function mapall()
+	{
+		
+
+		// $email = $this->session->get('email');	
+
+		$email = 'james@example.org';
+
+		// $email = $this->request->getGet('email');
+		
+
+		// $query = "SELECT c.id_country,c.country,c.lat,c.long FROM users as u     
+		// left join users_leads as ul on u.id_user = ul.id_user
+		// left join leads as l on l.id_lead = ul.id_lead
+		// left join countrys as c on l.id_country = c.id_country		
+		// where u.email = '{$email}'";
+
+
+		$query = "SELECT co.country,co.lat, co.long FROM users as u
+		left join countrys as co on co.id_country = u.id_country	                     
+		left join users_courses as uc on u.id_user = uc.id_user
+		left join courses as c on c.id_course = uc.id_course		
+		where u.is_buyer = 1 
+		";
+
+		$result = $this->db->query($query);
+
+		$data = $result->getResultArray();
+
+		
+		// return $this->response->setJSON("test");
+		// return $this->response->setJSON($data);
+
+		return $this->respond($data)
+		->setHeader('Access-Control-Allow-Origin', '*');   
+		
+	}
 
 
 	

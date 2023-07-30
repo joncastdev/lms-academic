@@ -31,9 +31,9 @@
 
 			let countryVal = $("#country").val();
 
-			$("#country").on("focus", function() {
-				$("#country").val("");
-			});
+			// $("#country").on("focus", function() {
+			// 	$("#country").val("");
+			// });
 
 		// let countryVal = $("#country").val();
 
@@ -51,7 +51,9 @@
 
      // $(".country").append('<option value="'+ val.id_course + '">' + val.name + '</option>');
 
-     $("#country").append('<option value="'+ val.id_course + '">' + val.name + '</option>');
+     // $("#country").append('<option value="'+ val.id_course + '">' + val.name + '</option>');
+
+     // $("#country").append('<option value="'+ val.id_course + '">' + val.name + '</option>');
 
 
      
