@@ -83,6 +83,9 @@ $routes->get('/panel', 'Panel::index');
 $routes->get('/panel/profile', 'Panel::profile');
 $routes->post('/change', 'Panel::change');
 $routes->get('/panel/certificates', 'Panel::certificateUsers');
+$routes->get('/panel/info', 'Panel::info');
+$routes->post('/changeinfo', 'Panel::changeinfo');
+$routes->get('/panel/countrys', 'Panel::countrys');
 
 
 $routes->get('/courses', 'Courses::index');

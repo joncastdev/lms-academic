@@ -181,6 +181,18 @@
 
 										<?php endif; ?>
 
+										<?php if($certificates): ?>
+
+									<div class="c-dashboardInfo col-lg-3 col-md-6">
+										<a href="/panel/info" style="text-decoration: none;">
+											<div class="wrap">
+												<h4 class="heading heading5 hind-font medium-font-weight c-dashboardInfo__title">Mi Info</h4>Detalles<span class="hind-font caption-12 c-dashboardInfo__count">  <i class="bx bx-box"></i></span>
+											</div>
+										</a>
+										</div>
+
+										<?php endif; ?>
+
 
 									<?php if($certificates == null): ?>
 
@@ -194,20 +206,8 @@
 
 										<?php endif; ?>		
 
-										<div class="c-dashboardInfo col-lg-3 col-md-6">
-											<!-- <a href="add_price.php" style="text-decoration: none;"> -->
-												<div class="wrap">
-													<h4 class="heading heading5 hind-font medium-font-weight c-dashboardInfo__title">En Desarrollo</h4><span class="hind-font caption-12 c-dashboardInfo__count">  <i class="bx bx-money"></i></span>
-												</div>
-											<!-- </a> -->
-										</div>
-										<div class="c-dashboardInfo col-lg-3 col-md-6">
-											<!-- <a href="logout.php" style="text-decoration: none;"> -->
-												<div class="wrap">
-													<h4 class="heading heading5 hind-font medium-font-weight c-dashboardInfo__title">En Desarrollo</h4><span class="hind-font caption-12 c-dashboardInfo__count">  <i class="bx bx-log-out"></i></span>
-												</div>
-											<!-- </a> -->
-										</div>
+										
+										
 									</div>
 								</div>
 							</div>

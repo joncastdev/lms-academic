@@ -353,8 +353,10 @@ class Login extends BaseController
 				'password' => $hash,
 				'token' => $random_token,			
 				'id_role' => 2,
+				'id_country' => 1,
 				'id_statu' => 2,
-				'is_buyer' => 0				
+				'is_buyer' => 0,
+				'linkedin' => 'none'					
 			);
 
 
