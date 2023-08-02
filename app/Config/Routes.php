@@ -118,6 +118,7 @@ $routes->get('/pdfcakephpcuatro', 'Home::pdfCakeCuatro');
 
 // rutas tutoriales free youtube
 $routes->get('/tutorials', 'Tutorials::index');
+$routes->get('/tutorials/show/(.*)', 'Tutorials::show/$1');
 
 // rutas para descargar proyectos
 $routes->get('/proyecto/codeigniter', 'Courses::descargarCodeigniter');

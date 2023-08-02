@@ -38,10 +38,39 @@ class Tutorials extends BaseController
 
 		$data['session'] = $this->session;
 
-		$email = $this->session->get('email');		
+		$email = $this->session->get('email');
+
+		$query1 = "SELECT * FROM tutorials";
+
+		$result1 = $this->db->query($query1);
+
+		$data['all_tutorials'] = $result1->getResultObject();		
 
 
 		return view('user/tutorials/index',$data);
+	}
+
+	public function show($id)
+	{		
+
+		$data['tittle'] = 'Tutorials View';
+
+		$data['session'] = $this->session;
+
+
+		$email = $this->session->get('email');
+
+		$query = "SELECT name, tutorial FROM tutorials 			
+		where id_tutorial = '{$id}'";
+
+		$result = $this->db->query($query);
+
+		$data['tutorials_pensum'] = $result->getResultObject();
+			
+
+		return view('user/tutorials/show',$data);		
+
+		
 	}
 
 

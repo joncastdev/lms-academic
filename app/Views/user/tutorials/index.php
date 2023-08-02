@@ -55,17 +55,23 @@
 
 				<div class="container">
 
-					<h2>Introducción a GitHub</h2>
 
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/JBa_rwN_A6I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					<?php foreach ($all_tutorials as $tutorial): ?>						
 
-					<hr>
 
-					<h2>Introducción a Laravel 10</h2>
+						<h2><?php echo $tutorial->name; ?></h2>
+						<hr>					
+						<br>
 
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/v_xXYRyAeHg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+						<a href="/tutorials/show/<?php echo $tutorial->id_tutorial; ?>" class="btn btn-info">Ir al curso</a>
 
-					<hr>
+										
+
+
+
+					<?php endforeach ?>
+
+					
 
 					
 
