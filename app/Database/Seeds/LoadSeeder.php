@@ -15,5 +15,9 @@ class LoadSeeder extends Seeder
 		$this->call('UserSeeder');
 		$this->call('StatuSeeder');
 		$this->call('UserCourseSeeder');
+
+		$this->call('ExamSeeder');
+		$this->call('QuestionSeeder');
+		$this->call('AmswerSeeder');
     }
 }
