@@ -17,7 +17,7 @@ class CreateAmswerTable extends Migration
             ],
             'amswer' => [
                 'type' => 'VARCHAR',
-                'constraint' => '50',
+                'constraint' => '100',
             ],                  
                                            
         ]);

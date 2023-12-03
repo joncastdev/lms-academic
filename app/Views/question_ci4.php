@@ -29,7 +29,7 @@
 
 			<?php echo form_open('question'); ?>
 
-			<p>1)<?php print_r($questions[0]->question)  ?></p>
+			<p class="bg-white text-dark">1)<?php print_r($questions[0]->question)  ?></p>
 			<input type="checkbox" id="vehicle1" name="question1" value="<?php print_r($amswer[0]->id_amswer)  ?></p>">
 			<label for="vehicle1"><?php print_r($amswer[0]->amswer)  ?> </label>
 			<br>
@@ -42,7 +42,7 @@
 			
 			<br>
 
-			<p>2)<?php print_r($questions2[0]->question)  ?></p>
+			<p class="bg-white text-dark">2)<?php print_r($questions2[0]->question)  ?></p>
 			<input type="checkbox" id="vehicle1" name="question2" value="<?php print_r($amswer[3]->id_amswer)  ?></p>">
 			<label for="vehicle1"><?php print_r($amswer[3]->amswer)  ?> </label>
 			<br>
@@ -56,7 +56,7 @@
 			<br>
 
 
-			<p>3)<?php print_r($questions3[0]->question)  ?></p>
+			<p class="bg-white text-dark">3)<?php print_r($questions3[0]->question)  ?></p>
 			<input type="checkbox" id="vehicle1" name="question3" value="<?php print_r($amswer[6]->id_amswer)  ?></p>">
 			<label for="vehicle1"><?php print_r($amswer[6]->amswer)  ?> </label>
 			<br>

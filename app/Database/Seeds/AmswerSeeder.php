@@ -39,11 +39,56 @@ class AmswerSeeder extends Seeder
 			[				
 				'amswer' => 'class Home extends InitController'							
 			],
-			// [				
-			// 	'pensum' => 'Refrescar Migraciones',
-			// 	'video' => '10)refreshhd.mp4',
-			// 	'id_exam' => 1								
-			// ],
+			[				
+				'amswer' => 'public function initController(\CodeIgniter\HTTP\RequestInterface $request, \CodeIgniter\HTTP\
+ResponseInterface $response, \Psr\Log\LoggerInterface $logger)'							
+			],
+			[				
+				'amswer' => 'public function AbstractController(\CodeIgniter\HTTP\RequestInterface $request, \CodeIgniter\
+HTTP\ResponseInterface $response, \Psr\Log\LoggerInterface $logger)'							
+			],
+			[				
+				'amswer' => 'public function LoadController(\CodeIgniter\HTTP\RequestInterface $request, \CodeIgniter\HTTP\
+ResponseInterface $response, \Psr\Log\LoggerInterface $logger)'							
+			],
+			[				
+				'amswer' => 'archivo .env'							
+			],
+			[				
+				'amswer' => 'archivo .anv'							
+			],
+			[				
+				'amswer' => 'archivo .wnv'							
+			],
+			[				
+				'amswer' => 'CI_ENVIRONMENT = development'							
+			],
+			[				
+				'amswer' => '# CI_ENVIRONMENT = development'							
+			],
+			[				
+				'amswer' => '& CI_ENVIRONMENT = development'							
+			],
+			[				
+				'amswer' => 'app/Config/Database.php'							
+			],
+			[				
+				'amswer' => 'app/Config/App.php'							
+			],
+			[				
+				'amswer' => 'app/Database/Database.php'							
+			],
+			[				
+				'amswer' => 'CI_ENVIRONMENT = development'							
+			],
+			[				
+				'amswer' => 'CI_ENVIRONMENT = production'							
+			],
+			[				
+				'amswer' => 'CI_ENVIRONMENT = testing'							
+			],
+
+
 			// [				
 			// 	'pensum' => 'Semillas',
 			// 	'video' => '11)seedhd.mp4',

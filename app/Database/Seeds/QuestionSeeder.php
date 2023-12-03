@@ -28,6 +28,39 @@ controlador?',
 				'id_exam' => 1,
 				'id_amswer' => 7,								
 			],
+			[				
+				'question' => 'En el controlador BaseController , tenemos una función por defecto incorporada, esta función
+se llama?',				
+				'id_exam' => 1,
+				'id_amswer' => 10,								
+			],
+			[				
+				'question' => 'CodeIgniter 4 incorpora un archivo para sus configuraciones de entorno, este archivo se
+llama?',				
+				'id_exam' => 1,
+				'id_amswer' => 13,								
+			],
+			[				
+				'question' => 'En las variables de entorno en el archivo .env, cual seria la forma para activar esta
+configuración en nuestro proyecto',				
+				'id_exam' => 1,
+				'id_amswer' => 16,								
+			],
+			[				
+				'question' => 'Supongamos que tenemos una conexión a una base de datos en el archivo .env , esta
+conexión la podemos realizar en el siguiente archivo, cual es la ruta de este archivo?',				
+				'id_exam' => 1,
+				'id_amswer' => 19,								
+			],
+			[				
+				'question' => 'Cuando desarrollamos nuestro proyecto en un entorno local, que nombre recibiría esta fase
+del desarrollo, en el archivo .env?',				
+				'id_exam' => 1,
+				'id_amswer' => 22,								
+			],
+
+
+
 			// [				
 			// 	'pensum' => 'Metodos por Defecto',
 			// 	'video' => '4)metododefectohd.mp4',

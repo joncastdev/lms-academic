@@ -17,7 +17,7 @@ class CreateQuestionTable extends Migration
             ],
             'question' => [
                 'type' => 'VARCHAR',
-                'constraint' => '50',
+                'constraint' => '100',
             ],                        
             'id_exam' => [
                 'type' => 'INT',
