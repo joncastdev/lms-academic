@@ -131,6 +131,14 @@ $routes->get('/proyecto/cake', 'Courses::descargarCake');
 // rutas articulos
 $routes->get('/como-aprender-a-programar', 'Home::learn');
 
+// rutas examenes
+$routes->get('/test-de-codeigniter', 'Exams::index');
+$routes->post('/start', 'Exams::start');
+$routes->get('/questions', 'Exams::question');
+// $routes->get('/questions/(.*)', 'exams::show/$1');
+
+
+
 // rutas free cursos
 $routes->get('/courses-free/(.*)', 'Home::show/$1');
 $routes->get('/videos-free/(.*)', 'Home::videos/$1');
