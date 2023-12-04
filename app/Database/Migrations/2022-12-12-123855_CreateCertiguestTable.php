@@ -19,6 +19,10 @@ class CreateCertiguestTable extends Migration
                 'type' => 'INT',
                 'constraint' => '11',
             ],
+             'id_guest' => [
+                'type' => 'INT',
+                'constraint' => '11',
+            ],
             'created_at'       => [
                 'type'           => 'DATETIME',             
             ],

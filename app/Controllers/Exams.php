@@ -312,15 +312,20 @@ class Exams extends BaseController
 
 		// $data['users_courses'] = $result->getResultObject();
 		$data = $result2->getRow();
+		
 
-		print_r($data);
+		// print_r($data->id_guest);
 
-		exit;
+		// exit;
+
+		$id_guest = $data->id_guest;
 
 
-		$id_user = $this->session->get('id_user');
+		// $id_user = $this->session->get('id_user');
 
-		$query2= "INSERT INTO guests_exams(id_guest,id_exam) VALUES ('{$id_user}','{$id_course}')";
+		$id_exam = 1;
+
+		$query2= "INSERT INTO guests_exams(id_guest,id_exam) VALUES ('{$id_guest}','{$id_exam}')";
 
 		$result2 = $this->db->query($query2);
 		
@@ -330,16 +335,18 @@ class Exams extends BaseController
 
 		$updated_at = date('y-m-d');
 
-		$querycert= "INSERT INTO certificates(id_course,id_user,created_at,updated_at) VALUES ('{$id_course}','{$id_user}','{$created_at}','{$updated_at}')";
+		// $id_exam = 1;
+
+		$querycert= "INSERT INTO certificatesguest(id_exam,id_guest,created_at,updated_at) VALUES ('{$id_exam}','{$id_guest}','{$created_at}','{$updated_at}')";
 
 		$resultcert = $this->db->query($querycert);
 
 
-		$data['tittle'] = 'Success';
+		// $data['tittle'] = 'Success';
 
-		$data['session'] = $this->session;
+		// $data['session'] = $this->session;
 
-		return view('user/courses/success',$data);
+		// return view('user/courses/success',$data);
 			
 			echo "Has pasado";
 		}else{
