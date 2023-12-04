@@ -2,6 +2,8 @@
 
 <?php echo $this->section('meta') ?>
 
+<meta name="description" content="Test de Codeigniter 4 con certificado, test de evaluación de php básico, examen gratis">
+
 
 
 	<?php echo $this->endSection() ?>
@@ -23,7 +25,7 @@
 
 			<h1>Examen Certificacion CodeIgniter 4</h1>
 
-			<p>Test con una duracion de 15 minutos con preguntas y respuestas, puntua entre los mejores</p>
+			<p>Test con una duracion aproximada de 15 minutos con preguntas y respuestas de seleccion simple, puntua entre el 30% mejor para recibir el certificado</p>
 
 			<?php echo $this->include('errors/form/errors'); ?>
 

@@ -106,6 +106,10 @@ class Exams extends BaseController
 
 	public function question()
 	{
+
+		if ($this->session->get('email_guest')) {
+			
+		
 		$data['tittle'] = 'Test de CodeIgniter';
 
 		$email = $this->session->get('email_guest');
@@ -204,6 +208,14 @@ class Exams extends BaseController
 		
 
 		return view('question_ci4',$data);
+
+	}else{
+
+		return redirect()->to('/test-de-codeigniter');
+	}
+
+
+
 	}
 
 	public function evaluation()
@@ -349,15 +361,30 @@ class Exams extends BaseController
 		// return view('user/courses/success',$data);
 			$this->session->destroy();
 
-			echo "Has pasado";
+			// echo "Has pasado";
+
+		// $data['tittle'] = 'Test Aprobado';
+
+		// $data['tittle'] 
+
+		// // $data['session'] = $this->session;
+
+		// return view('success_exam',$data);
+
+			return redirect()->to('/certificates/exams');
+
 		}else{
 
 			$this->session->destroy();
 
-			echo "Sigue intentando";
+			$data['tittle'] = 'Test Reprobado';
+
+		return view('fail_exam',$data);
+
+			// echo "Sigue intentando";
 		}
 
-		exit;
+		// exit;
 		// $data['users_courses_val'] = $result->getRow();	
 		
 
