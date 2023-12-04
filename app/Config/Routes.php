@@ -103,6 +103,11 @@ $routes->get('/certificates', 'Certificates::index');
 $routes->get('/number', 'Certificates::number');
 $routes->get('/pdfnumber/(.*)', 'Certificates::pdfNumber/$1');
 
+// rutas certificados guest test
+$routes->get('/certificates/exams', 'CertificatesGuest::index');
+$routes->get('/number/exam', 'CertificatesGuest::number');
+$routes->get('/pdfnumberexam/(.*)', 'CertificatesGuest::pdfNumber/$1');
+
 // rutas de graduados
 $routes->get('/graduates', 'Graduates::index');
 // $routes->get('/select', 'Graduates::select');

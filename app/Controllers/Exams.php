@@ -347,9 +347,12 @@ class Exams extends BaseController
 		// $data['session'] = $this->session;
 
 		// return view('user/courses/success',$data);
-			
+			$this->session->destroy();
+
 			echo "Has pasado";
 		}else{
+
+			$this->session->destroy();
 
 			echo "Sigue intentando";
 		}
