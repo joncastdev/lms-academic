@@ -294,6 +294,52 @@ class Exams extends BaseController
 		// print_r($total);
 
 		if ($total >= 7) {
+
+			$email = $this->session->get('email_guest');
+			$firstName = $this->session->get('first_name_guest');
+			$lastName = $this->session->get('last_name_guest');
+
+			$query1= "INSERT INTO guests(first_name,last_name,email) VALUES ('{$firstName}','{$lastName}','{$email}')";
+
+		
+		$result1 = $this->db->query($query1);
+
+
+		$query2 = "SELECT id_guest FROM guests  
+		where email = '{$email}'";		
+
+		$result2 = $this->db->query($query2);
+
+		// $data['users_courses'] = $result->getResultObject();
+		$data = $result2->getRow();
+
+		print_r($data);
+
+		exit;
+
+
+		$id_user = $this->session->get('id_user');
+
+		$query2= "INSERT INTO guests_exams(id_guest,id_exam) VALUES ('{$id_user}','{$id_course}')";
+
+		$result2 = $this->db->query($query2);
+		
+
+		//insert certificados
+		$created_at = date('y-m-d');
+
+		$updated_at = date('y-m-d');
+
+		$querycert= "INSERT INTO certificates(id_course,id_user,created_at,updated_at) VALUES ('{$id_course}','{$id_user}','{$created_at}','{$updated_at}')";
+
+		$resultcert = $this->db->query($querycert);
+
+
+		$data['tittle'] = 'Success';
+
+		$data['session'] = $this->session;
+
+		return view('user/courses/success',$data);
 			
 			echo "Has pasado";
 		}else{
