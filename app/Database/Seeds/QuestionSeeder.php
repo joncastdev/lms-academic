@@ -58,6 +58,17 @@ del desarrollo, en el archivo .env?',
 				'id_exam' => 1,
 				'id_amswer' => 22,								
 			],
+			[				
+				'question' => 'Supongamos que creamos un controlador de tipo recurso llamado users, cuales serian los
+nombre de las funciones en el controlador?',				
+				'id_exam' => 1,
+				'id_amswer' => 25,								
+			],
+			[				
+				'question' => 'Con cual comando iniciamos nuestro servidor de desarrollo?',				
+				'id_exam' => 1,
+				'id_amswer' => 28,								
+			],
 
 
 

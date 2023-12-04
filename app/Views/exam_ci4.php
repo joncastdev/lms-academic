@@ -28,7 +28,16 @@
 			<?php echo $this->include('errors/form/errors'); ?>
 
 			<?php echo form_open('start'); ?>
-							
+			
+
+			<input type="text" name="first_name" placeholder="ejem:jonathan" class="form-control">
+
+			<br>
+
+
+			<input type="text" name="last_name" placeholder="ejem:castro" class="form-control">
+
+			<br>				
 
 			<input type="email" name="email" placeholder="email@gmail.com" class="form-control">
 			<!-- <div class="text-danger"><?php //echo form_error('email');  ?></div>  -->

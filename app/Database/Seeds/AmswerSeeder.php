@@ -87,6 +87,24 @@ ResponseInterface $response, \Psr\Log\LoggerInterface $logger)'
 			[				
 				'amswer' => 'CI_ENVIRONMENT = testing'							
 			],
+			[				
+				'amswer' => 'index,new,edit,show,create,update,delete'					
+			],
+			[				
+				'amswer' => 'index,new,edit,view,create,update,remove'					
+			],
+			[				
+				'amswer' => 'undex,wew,edit,show,create,update,delete'					
+			],
+			[				
+				'amswer' => 'php spark serve'		
+			],
+			[				
+				'amswer' => 'php artisan start'	
+			],
+			[				
+				'amswer' => 'npm start serve'	
+			],
 
 
 			// [				

@@ -50,7 +50,21 @@ class Exams extends BaseController
 		// $first_name = $this->request->getPost('first_name');
 		// $last_name = $this->request->getPost('last_name');
 
-		$rules = [			
+		$rules = [
+			'first_name'    => [
+				'rules'  => 'required',
+				'errors' => [
+					'required' => 'FirstName is required.'
+					
+				]
+			],
+			'last_name'    => [
+				'rules'  => 'required',
+				'errors' => [
+					'required' => 'LastName is required.'
+					
+				]
+			],			
 			'email'    => [
 				'rules'  => 'required|valid_email',
 				'errors' => [
@@ -74,7 +88,9 @@ class Exams extends BaseController
 		}
 
 		$data=array(
-			'email_guest' => $this->request->getPost('email')			
+			'email_guest' => $this->request->getPost('email'),
+			'first_name_guest' => $this->request->getPost('first_name'),
+			'last_name_guest' => $this->request->getPost('last_name')					
 			// 'email' => $data[0]->email,
 			// 'id_statu' => $data[0]->id_statu,			
 			// 'id_role' => $data[0]->id_role,
@@ -128,11 +144,171 @@ class Exams extends BaseController
 
 		 // print_r($data['questions']);
 
+		$query4 = "SELECT id_question,question FROM questions where id_question = 4";
 
+		$result4 = $this->db->query($query4);
+
+		$data['questions4'] = $result4->getResultObject();
+
+		 // print_r($data['questions']);
+
+		$query5 = "SELECT id_question,question FROM questions where id_question = 5";
+
+		$result5 = $this->db->query($query5);
+
+		$data['questions5'] = $result5->getResultObject();
+
+		 // print_r($data['questions']);
+
+		$query6 = "SELECT id_question,question FROM questions where id_question = 6";
+
+		$result6 = $this->db->query($query6);
+
+		$data['questions6'] = $result6->getResultObject();
+
+		 // print_r($data['questions']);
+
+		$query7 = "SELECT id_question,question FROM questions where id_question = 7";
+
+		$result7 = $this->db->query($query7);
+
+		$data['questions7'] = $result7->getResultObject();
+
+		 // print_r($data['questions']);
+
+
+		$query8 = "SELECT id_question,question FROM questions where id_question = 8";
+
+		$result8 = $this->db->query($query8);
+
+		$data['questions8'] = $result8->getResultObject();
+
+		 // print_r($data['questions']);
+
+		$query9 = "SELECT id_question,question FROM questions where id_question = 9";
+
+		$result9 = $this->db->query($query9);
+
+		$data['questions9'] = $result9->getResultObject();
+
+		 // print_r($data['questions']);
+
+		$query10 = "SELECT id_question,question FROM questions where id_question = 10";
+
+		$result10 = $this->db->query($query10);
+
+		$data['questions10'] = $result10->getResultObject();
+
+		 // print_r($data['questions']);
 
 		
 
 		return view('question_ci4',$data);
+	}
+
+	public function evaluation()
+	{
+
+
+
+		// $first_name = $this->request->getPost('first_name');
+		// $last_name = $this->request->getPost('last_name');
+
+		// $rules = [
+		// 'first_name'    => [
+		// 		'rules'  => 'required',
+		// 		'errors' => [
+		// 			'required' => 'FirstName is required.'
+
+		// 		]
+		// 	],
+		// 	'last_name'    => [
+		// 		'rules'  => 'required',
+		// 		'errors' => [
+		// 			'required' => 'LastName is required.'
+
+		// 		]
+		// 	],			
+		// 	'email'    => [
+		// 		'rules'  => 'required|valid_email',
+		// 		'errors' => [
+		// 			'required' => 'Email is required.',
+		// 			'valid_email' => 'Verify email.'
+		// 		]
+		// 	],
+		// ];
+
+		// if (!$this->validate($rules))
+		// {
+		// 	$data['tittle'] = 'Test de CodeIgniter';
+
+		// 	$data['session'] = $this->session;
+
+		// 	$data["validation"] = $this->validator->listErrors();
+
+		// 	return view('exam_ci4',$data);
+
+
+		// }
+
+		// $data=array(
+		// 	'email_guest' => $this->request->getPost('email'),
+		// 	'first_name_guest' => $this->request->getPost('first_name'),
+		// 	'last_name_guest' => $this->request->getPost('last_name')					
+		// 	// 'email' => $data[0]->email,
+		// 	// 'id_statu' => $data[0]->id_statu,			
+		// 	// 'id_role' => $data[0]->id_role,
+		// 	// 'is_buyer' => $data[0]->is_buyer									
+		// );
+
+		$question1 = $this->request->getPost('question1');
+		$question2 = $this->request->getPost('question2');
+		$question3 = $this->request->getPost('question3');
+		$question4 = $this->request->getPost('question4');
+		$question5 = $this->request->getPost('question5');
+		$question6 = $this->request->getPost('question6');
+		$question7 = $this->request->getPost('question7');
+		$question8 = $this->request->getPost('question8');
+		$question9 = $this->request->getPost('question9');
+		$question10 = $this->request->getPost('question10');
+
+		$query = "SELECT * FROM questions as q                     
+		left join amswer as a on q.id_amswer = a.id_amswer
+		-- left join courses as c on c.id_course = uc.id_course		
+		where a.id_amswer = '{$question1}' or a.id_amswer = '{$question2}'
+		or a.id_amswer = '{$question3}'  or a.id_amswer = '{$question4}'
+		or a.id_amswer = '{$question5}'  or a.id_amswer = '{$question6}'
+		or a.id_amswer = '{$question7}'  or a.id_amswer = '{$question8}'
+		or a.id_amswer = '{$question9}'  or a.id_amswer = '{$question10}'
+		";
+		
+
+		$result = $this->db->query($query);
+
+		$data = $result->getResultObject();
+
+		// print_r($data);
+
+		$total = count($data);
+
+		// print_r($total);
+
+		if ($total >= 7) {
+			
+			echo "Has pasado";
+		}else{
+
+			echo "Sigue intentando";
+		}
+
+		exit;
+		// $data['users_courses_val'] = $result->getRow();	
+		
+
+		// $this->session->set($data);
+
+		// return redirect()->to('/questions');
+
 	}
 
 	public function show($id)

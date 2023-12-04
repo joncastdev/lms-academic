@@ -135,6 +135,7 @@ $routes->get('/como-aprender-a-programar', 'Home::learn');
 $routes->get('/test-de-codeigniter', 'Exams::index');
 $routes->post('/start', 'Exams::start');
 $routes->get('/questions', 'Exams::question');
+$routes->post('/evaluation', 'Exams::evaluation');
 // $routes->get('/questions/(.*)', 'exams::show/$1');
 
 
