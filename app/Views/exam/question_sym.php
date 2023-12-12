@@ -21,13 +21,13 @@
 
 		<div class="col-md-12">
 
-			<h1>Examen Certificacion CodeIgniter 4</h1>
+			<h1>Examen Certificacion Symfony 6 y 7</h1>
 
 			<p>Test de seleccion simple 10 con preguntas, puntua entre los mejores para recibir el certificado gratuito de participacion</p>
 
 			 	<?php echo $this->include('errors/form/errors'); ?> 
 
-			<?php echo form_open('evaluationsym'); ?>
+			<?php echo form_open('evaluation'); ?>
 
 			<p class="bg-white text-dark">1)<?php print_r($questions[0]->question)  ?></p>
 			<input type="checkbox" id="vehicle1" name="question1" value="<?php print_r($amswer[0]->id_amswer)  ?></p>">

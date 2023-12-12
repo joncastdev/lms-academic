@@ -65,10 +65,62 @@ nombre de las funciones en el controlador?',
 				'id_amswer' => 25,								
 			],
 			[				
-				'question' => 'Con cual comando iniciamos nuestro servidor de desarrollo?',				
+				'question' => 'Con cual comando iniciamos nuestro servidor de desarrollo?',
 				'id_exam' => 1,
 				'id_amswer' => 28,								
 			],
+			[				
+				'question' => 'En el marco de Symfony, ¿cuál es el comando para listar el conjunto de rutas en una línea de comando?',
+				'id_exam' => 2,
+				'id_amswer' => 1,								
+			],
+			[				
+				'question' => 'En el siguiente ejemplo, ¿cuál es la mejor práctica al trabajar con claves sensibles de una API?',
+				'id_exam' => 2,
+				'id_amswer' => 4,								
+			],
+			[				
+				'question' => '¿Cuál es la forma correcta de mostrar una salida en formato json con el framework Symfony?',
+				'id_exam' => 2,
+				'id_amswer' => 7,								
+			],
+			[				
+				'question' => '¿Cómo podemos proteger una ruta con autenticación en Symfony?',
+				'id_exam' => 2,
+				'id_amswer' => 10,								
+			],
+			[				
+				'question' => 'Al crear una APIREST  en el marco Symfony, ¿cuál es el paquete o framework recomendado?',
+				'id_exam' => 2,
+				'id_amswer' => 13,								
+			],
+			[				
+				'question' => 'Cuando eliminamos un recurso, ¿cuál es la mejor práctica para devolver un código de estado?',
+				'id_exam' => 2,
+				'id_amswer' => 16,								
+			],
+			[				
+				'question' => 'El framework Symfony nos permite crear un crud en simples pasos, cual es el comando que nos permite crear esta estructura de controlador y vistas?',
+				'id_exam' => 2,
+				'id_amswer' => 19,								
+			],
+			[				
+				'question' => 'Cuando se trabaja con vistas, Symfony usa webpack encore para compilar los estilos, ¿Cual función que se usa por defecto?',
+				'id_exam' => 2,
+				'id_amswer' => 22,								
+			],
+			[				
+				'question' => 'Cuando se trabaja con datos de prueba en un entorno de desarrollo local, ¿Cual paquete utiliza Symfony?',
+				'id_exam' => 2,
+				'id_amswer' => 25,								
+			],
+			[				
+				'question' => '¿Cómo se llama el orm que incorpora el framework Symfony?',
+				'id_exam' => 2,
+				'id_amswer' => 28,								
+			],
+
+
 
 
 

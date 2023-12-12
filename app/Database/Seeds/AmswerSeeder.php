@@ -105,6 +105,103 @@ ResponseInterface $response, \Psr\Log\LoggerInterface $logger)'
 			[				
 				'amswer' => 'npm start serve'	
 			],
+			[				
+				'amswer' => 'php bin/console debug:router'	
+			],
+			[				
+				'amswer' => 'php spark routes'	
+			],
+			[				
+				'amswer' => 'php artisan route:list'	
+			],
+			[				
+				'amswer' => '$stripe = Stripe::setApiKey($_ENV["STRIPE_SECRET_KEY"])'	
+			],
+			[				
+				'amswer' => '$stripe = Stripe::setApiKey(sk_test_51KXWacKJXKHeoSJ)'	
+			],
+			[				
+				'amswer' => '$stripe = Stripe::setApiKey(%_ENVIRO("STRIPE_SECRET_KEY"))'
+			],
+			[				
+				'amswer' => 'return $this->json($data)'
+			],
+			[				
+				'amswer' => 'return new Response($data)'
+			],
+			[				
+				'amswer' => 'return new JsonNextponse($data)'
+			],
+			[				
+				'amswer' => '$this->denyAccessUnlessGranted(ROLE_ADMIN)'
+			],
+			[				
+				'amswer' => '- { router: ^/admin, roles: ROLE_ADMIN }'
+			],
+			[				
+				'amswer' => 'Route::Resource(admin, AdminController::class)
+  ->middleware(auth:sanctum)'
+			],
+			[				
+				'amswer' => 'API Platform'
+			],
+			[				
+				'amswer' => 'Sanctum'
+			],
+			[				
+				'amswer' => 'Breeze'
+			],
+			[				
+				'amswer' => 'return $this->json(null, Response::HTTP_NO_CONTENT)'
+			],
+			[				
+				'amswer' => 'return $this->json(null, Response::HTTP_SEE_OTHER)'
+			],
+			[				
+				'amswer' => 'return $this->json(null, Response::HTTP_OK)'
+			],
+			[				
+				'amswer' => 'php bin/console make:crud'
+			],
+			[				
+				'amswer' => 'php bin/console create:crud'
+			],
+			[				
+				'amswer' => 'php bin/console bake:crud'
+			],
+			[				
+				'amswer' => '{{ encore_entry_link_tags(app) }}'
+			],
+			[				
+				'amswer' => '{{ encore_create_link_tags(app) }}'
+			],
+			[				
+				'amswer' => '{{ serializer_entry_link_tags(app) }}'
+			],
+			[				
+				'amswer' => 'DoctrineFixturesBundle'
+			],
+			[				
+				'amswer' => 'DoctrineArtisanBundle'
+			],
+			[				
+				'amswer' => 'DoctrineSeedsBundle'
+			],
+			[				
+				'amswer' => 'Doctrine'
+			],
+			[				
+				'amswer' => 'Eloquent'
+			],
+			[				
+				'amswer' => 'Sequelize'
+			],
+
+
+
+
+
+
 
 
 			// [				

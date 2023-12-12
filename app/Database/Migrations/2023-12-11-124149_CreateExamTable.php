@@ -17,7 +17,7 @@ class CreateExamTable extends Migration
             ],
             'name' => [
                 'type' => 'VARCHAR',
-                'constraint' => '50',
+                'constraint' => '512',
             ],            
             // 'id_question' => [
             //     'type' => 'INT',

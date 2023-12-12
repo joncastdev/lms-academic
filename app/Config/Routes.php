@@ -143,6 +143,12 @@ $routes->get('/questions', 'Exams::question');
 $routes->post('/evaluation', 'Exams::evaluation');
 // $routes->get('/questions/(.*)', 'exams::show/$1');
 
+// rutas examen symfony
+$routes->get('/test-de-symfony', 'Exams::examSym');
+$routes->post('/startsym', 'Exams::startsym');
+$routes->get('/questionssym', 'Exams::questionsym');
+$routes->post('/evaluationsym', 'Exams::evaluationsym');
+
 
 
 // rutas free cursos

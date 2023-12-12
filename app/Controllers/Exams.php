@@ -394,6 +394,317 @@ class Exams extends BaseController
 
 	}
 
+	public function examSym()
+	{
+		$data['tittle'] = 'Test de Symfony';
+		
+
+		return view('exam/exam_sym',$data);
+	}
+
+
+	public function startsym()
+	{
+
+
+
+		// $first_name = $this->request->getPost('first_name');
+		// $last_name = $this->request->getPost('last_name');
+
+		$rules = [
+			'first_name'    => [
+				'rules'  => 'required',
+				'errors' => [
+					'required' => 'FirstName is required.'
+					
+				]
+			],
+			'last_name'    => [
+				'rules'  => 'required',
+				'errors' => [
+					'required' => 'LastName is required.'
+					
+				]
+			],			
+			'email'    => [
+				'rules'  => 'required|valid_email',
+				'errors' => [
+					'required' => 'Email is required.',
+					'valid_email' => 'Verify email.'
+				]
+			],
+		];
+
+		if (!$this->validate($rules))
+		{
+			$data['tittle'] = 'Test de Symfony';
+
+			$data['session'] = $this->session;
+
+			$data["validation"] = $this->validator->listErrors();
+			
+			return view('exam/exam_sym',$data);
+
+
+		}
+
+		$data=array(
+			'email_guest' => $this->request->getPost('email'),
+			'first_name_guest' => $this->request->getPost('first_name'),
+			'last_name_guest' => $this->request->getPost('last_name')					
+			// 'email' => $data[0]->email,
+			// 'id_statu' => $data[0]->id_statu,			
+			// 'id_role' => $data[0]->id_role,
+			// 'is_buyer' => $data[0]->is_buyer									
+		);	
+		
+
+		$this->session->set($data);
+
+		return redirect()->to('/questionssym');
+
+	}
+
+	public function questionsym()
+	{
+
+		if ($this->session->get('email_guest')) {
+			
+		
+		$data['tittle'] = 'Test de Symfony';
+
+		$email = $this->session->get('email_guest');
+
+		// print_r($email);
+
+		$query = "SELECT id_question,question FROM questions where id_question = 11";
+
+		$result = $this->db->query($query);
+
+		$data['questions'] = $result->getResultObject();
+
+		 // print_r($data['questions']);
+
+		$query1 = "SELECT id_amswer,amswer FROM amswer where id_amswer >= 31";
+
+		$result1 = $this->db->query($query1);
+
+		$data['amswer'] = $result1->getResultObject();
+
+			 // print_r($data['questions']);
+
+		$query2 = "SELECT id_question,question FROM questions where id_question = 12";
+
+		$result2 = $this->db->query($query2);
+
+		$data['questions2'] = $result2->getResultObject();
+
+		 // print_r($data['questions']);
+
+		$query3 = "SELECT id_question,question FROM questions where id_question = 13";
+
+		$result3 = $this->db->query($query3);
+
+		$data['questions3'] = $result3->getResultObject();
+
+		 // print_r($data['questions']);
+
+		$query4 = "SELECT id_question,question FROM questions where id_question = 14";
+
+		$result4 = $this->db->query($query4);
+
+		$data['questions4'] = $result4->getResultObject();
+
+		 // print_r($data['questions']);
+
+		$query5 = "SELECT id_question,question FROM questions where id_question = 15";
+
+		$result5 = $this->db->query($query5);
+
+		$data['questions5'] = $result5->getResultObject();
+
+		 // print_r($data['questions']);
+
+		$query6 = "SELECT id_question,question FROM questions where id_question = 16";
+
+		$result6 = $this->db->query($query6);
+
+		$data['questions6'] = $result6->getResultObject();
+
+		 // print_r($data['questions']);
+
+		$query7 = "SELECT id_question,question FROM questions where id_question = 17";
+
+		$result7 = $this->db->query($query7);
+
+		$data['questions7'] = $result7->getResultObject();
+
+		 // print_r($data['questions']);
+
+
+		$query8 = "SELECT id_question,question FROM questions where id_question = 18";
+
+		$result8 = $this->db->query($query8);
+
+		$data['questions8'] = $result8->getResultObject();
+
+		 // print_r($data['questions']);
+
+		$query9 = "SELECT id_question,question FROM questions where id_question = 19";
+
+		$result9 = $this->db->query($query9);
+
+		$data['questions9'] = $result9->getResultObject();
+
+		 // print_r($data['questions']);
+
+		$query10 = "SELECT id_question,question FROM questions where id_question = 20";
+
+		$result10 = $this->db->query($query10);
+
+		$data['questions10'] = $result10->getResultObject();
+
+		 // print_r($data['questions']);
+
+		
+
+		return view('exam/question_sym',$data);
+
+	}else{
+
+		return redirect()->to('/test-de-symfony');
+	}
+
+
+
+	}
+
+
+	public function evaluationsym()
+	{
+
+
+		$question1 = $this->request->getPost('question1');
+		$question2 = $this->request->getPost('question2');
+		$question3 = $this->request->getPost('question3');
+		$question4 = $this->request->getPost('question4');
+		$question5 = $this->request->getPost('question5');
+		$question6 = $this->request->getPost('question6');
+		$question7 = $this->request->getPost('question7');
+		$question8 = $this->request->getPost('question8');
+		$question9 = $this->request->getPost('question9');
+		$question10 = $this->request->getPost('question10');
+
+		$query = "SELECT * FROM questions as q                     
+		left join amswer as a on q.id_amswer = a.id_amswer
+		-- left join courses as c on c.id_course = uc.id_course		
+		where a.id_amswer = '{$question1}' or a.id_amswer = '{$question2}'
+		or a.id_amswer = '{$question3}'  or a.id_amswer = '{$question4}'
+		or a.id_amswer = '{$question5}'  or a.id_amswer = '{$question6}'
+		or a.id_amswer = '{$question7}'  or a.id_amswer = '{$question8}'
+		or a.id_amswer = '{$question9}'  or a.id_amswer = '{$question10}'
+		";
+		
+
+		$result = $this->db->query($query);
+
+		$data = $result->getResultObject();
+
+		// print_r($data);
+
+		$total = count($data);
+
+		// print_r($total);
+
+		if ($total >= 7) {
+
+			$email = $this->session->get('email_guest');
+			$firstName = $this->session->get('first_name_guest');
+			$lastName = $this->session->get('last_name_guest');
+
+			$query1= "INSERT INTO guests(first_name,last_name,email) VALUES ('{$firstName}','{$lastName}','{$email}')";
+
+		
+		$result1 = $this->db->query($query1);
+
+
+		$query2 = "SELECT id_guest FROM guests  
+		where email = '{$email}'";		
+
+		$result2 = $this->db->query($query2);
+
+		// $data['users_courses'] = $result->getResultObject();
+		$data = $result2->getRow();
+		
+
+		// print_r($data->id_guest);
+
+		// exit;
+
+		$id_guest = $data->id_guest;
+
+
+		// $id_user = $this->session->get('id_user');
+
+		$id_exam = 2;
+
+		$query2= "INSERT INTO guests_exams(id_guest,id_exam) VALUES ('{$id_guest}','{$id_exam}')";
+
+		$result2 = $this->db->query($query2);
+		
+
+		//insert certificados
+		$created_at = date('y-m-d');
+
+		$updated_at = date('y-m-d');
+
+		// $id_exam = 1;
+
+		$querycert= "INSERT INTO certificatesguest(id_exam,id_guest,created_at,updated_at) VALUES ('{$id_exam}','{$id_guest}','{$created_at}','{$updated_at}')";
+
+		$resultcert = $this->db->query($querycert);
+
+
+		// $data['tittle'] = 'Success';
+
+		// $data['session'] = $this->session;
+
+		// return view('user/courses/success',$data);
+			$this->session->destroy();
+
+			// echo "Has pasado";
+
+		// $data['tittle'] = 'Test Aprobado';
+
+		// $data['tittle'] 
+
+		// // $data['session'] = $this->session;
+
+		// return view('success_exam',$data);
+
+			return redirect()->to('/certificates/exams');
+
+		}else{
+
+			$this->session->destroy();
+
+			$data['tittle'] = 'Test Reprobado';
+
+		return view('fail_exam',$data);
+
+			// echo "Sigue intentando";
+		}
+
+		// exit;
+		// $data['users_courses_val'] = $result->getRow();	
+		
+
+		// $this->session->set($data);
+
+		// return redirect()->to('/questions');
+
+	}
+
 	public function show($id)
 	{		
 
