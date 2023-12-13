@@ -595,6 +595,8 @@ class Exams extends BaseController
 		$question9 = $this->request->getPost('question9');
 		$question10 = $this->request->getPost('question10');
 
+		 // print_r($question1);
+
 		$query = "SELECT * FROM questions as q                     
 		left join amswer as a on q.id_amswer = a.id_amswer
 		-- left join courses as c on c.id_course = uc.id_course		

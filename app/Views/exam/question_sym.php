@@ -27,7 +27,7 @@
 
 			 	<?php echo $this->include('errors/form/errors'); ?> 
 
-			<?php echo form_open('evaluation'); ?>
+			<?php echo form_open('evaluationsym'); ?>
 
 			<p class="bg-white text-dark">1)<?php print_r($questions[0]->question)  ?></p>
 			<input type="checkbox" id="vehicle1" name="question1" value="<?php print_r($amswer[0]->id_amswer)  ?></p>">

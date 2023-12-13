@@ -8,6 +8,8 @@ class ExamSeeder extends Seeder
 {
     public function run()
     {
+
+    		$this->db->table('exams')->truncate();	
        $data = [
 			[			
 				'name' => 'Codeigniter'											
