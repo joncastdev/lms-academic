@@ -77,6 +77,9 @@ $routes->get('/users/orders', 'Users::orders');
 
 $routes->get('/orders/table', 'Users::orders_table');
 
+$routes->get('/users/promo', 'Users::email_promo_users');
+$routes->get('/users/promo/guest', 'Users::email_promo_guest');
+
 $routes->resource('users');
 
 $routes->get('/panel', 'Panel::index');

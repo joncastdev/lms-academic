@@ -44,10 +44,110 @@ class Users extends BaseController
 		
 		$data['tittle'] = 'Users';
 
-		$data['users'] = $this->UserModel->findAll();
+		// $data['users'] = $this->UserModel->findAll();
+
+		$query = "SELECT * FROM users where id_statu=1";
+
+		
+		$result = $this->db->query($query);
+
+		$data['users'] = $result->getResultObject();	
 
 		return view('admin/index',$data);
 	}
+
+	public function email_promo_users()
+	{
+
+		$query = "SELECT * FROM users where id_statu=1";
+
+		
+		$result = $this->db->query($query);
+
+		// $data['users'] = $result->getResultObject();
+
+		$users = $result->getResultObject();
+
+		// print_r($data['users']);
+
+		// exit;	
+
+		$email = \Config\Services::email();
+
+		// $email->setFrom('tutoriales@cursosprogramaciongratis.online', 'Jonathan Castro');
+
+		foreach ($users as $user) {
+
+				$email->setFrom('tutoriales@cursosprogramaciongratis.online', 'Jonathan Castro');
+
+			$email->setTo($user->email);
+
+			$email->setSubject('Nuevo Tutorial y Novedades');
+		// $email->setMessage($email_user.$random_token);
+
+		// $activation = base_url('/activation/');
+
+		// $email->setMessage('Hi, <br/> <br/> We need to make sure you are human. Please verify your email and get started using your Website account. <br/> <br/> <a href="'.base_url().'/activation'. '?token=' . $random_token.'">'.'</a>');
+		$video_url_tutorial = 'https://www.youtube.com/watch?v=cuwo2iIX2wI&ab_channel=PHPDesdeCero';
+
+		$video_url_promo = 'https://www.udemy.com/course/master-en-frameworks-php-laravel-codeigniter-symfony/?couponCode=PHPDESDECERO';
+
+		$email->setMessage('Hola estimado Usuario, tenemos un nuevo Curso / Tutorial en nuestro canal de Youtube:'.$video_url_tutorial.'Y una oferta especial por tiempo limitado:'.$video_url_promo);		
+
+		$email->send();
+
+		}
+		// $email->setTo($data['users']);
+		// $email->setCC('another@another-example.com');
+		// $email->setBCC('them@their-example.com');
+
+			return redirect()->to('/users');
+
+		
+
+	}
+
+	public function email_promo_guest()
+	{
+
+		$query = "SELECT * FROM guests";
+
+		
+		$result = $this->db->query($query);
+
+		
+
+		$users = $result->getResultObject();
+
+		
+
+		$email = \Config\Services::email();
+
+	
+
+		foreach ($users as $user) {
+
+				$email->setFrom('tutoriales@cursosprogramaciongratis.online', 'Jonathan Castro');
+
+			$email->setTo($user->email);
+
+			$email->setSubject('Nuevo Tutorial y Novedades');
+		
+		$video_url_tutorial = 'https://www.youtube.com/watch?v=gOA1GoLDAgk&ab_channel=PHPDesdeCero';
+
+		$video_url_promo = 'https://www.udemy.com/course/master-en-frameworks-php-laravel-codeigniter-symfony/?couponCode=PHPDESDECERO';
+
+		$email->setMessage('Hola estimado Usuario, tenemos un nuevo Curso / Tutorial en nuestro canal de Youtube:'.$video_url_tutorial.'Y una oferta especial por tiempo limitado:'.$video_url_promo);		
+
+		$email->send();
+
+		}
+		
+
+		return redirect()->to('/users');
+
+	}
+
 	
 
 	public function new()
@@ -116,7 +216,7 @@ class Users extends BaseController
 	{
 
 		$query = "UPDATE users SET is_buyer = 0
-				where id_user = '{$id}'";
+		where id_user = '{$id}'";
 
 		
 		$result = $this->db->query($query);
@@ -142,7 +242,7 @@ class Users extends BaseController
 	{
 
 		$query = "UPDATE users SET is_buyer = 1
-				where id_user = '{$id}'";
+		where id_user = '{$id}'";
 
 		
 		$result = $this->db->query($query);		
