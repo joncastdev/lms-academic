@@ -1,23 +1,29 @@
-# OpenGisCRM CodeIgniter 4 Version
-Manage your clients and leads with an Open Source Gis CRM Software.
+## Introduction
 
-## Starting 🚀
+Laravel open source forum to manage online communities.
+
+## About
+A powerful Open Source Business Forum that can be installed on your server.Open source Laravel Forum
+
+- Follow the creator Jonathan Castro:
+    - YouTube: **[youtube.com/@joncastdev](https://youtube.com/@joncastdev)** — Videos every week
+    - Twitch: **[twitch.tv/joncastdev](https://twitch.tv/joncastdev)** — Live coding on Mondays, Wednesdays, and Fridays at 9PM UTC
+    - LinkedIn: **[linkedin.com/in/joncastdev](https://www.linkedin.com/in/joncastdev)**
+    - Instagram: **[instagram.com/joncastdev](https://www.instagram.com/joncastdev)**
+    - Tiktok: **[tiktok.com/@joncastdev](https://www.tiktok.com/@joncastdev)**
+
+## Starting
 
 _These instructions will allow you to get a copy of the project running on your local machine for development and testing purposes._
 
-## Demo Web-App :movie_camera: 
 
+## Setup
 
-* [Demo CodeIgniter 4](https://www.youtube.com/watch?v=nDQmo14mxuk)
-
-### Pre-requirements 📋
-
-- PHP 7.4 >=
+- PHP 7.4 <=
 - PostgreSQL (Or MySQL)
 - [Composer](https://getcomposer.org/)
 
 ## Additional details on dependencies
-
 Assuming you're running Ubuntu, and then install all dependencies from the following list:
 
 sudo apt-get install php7.4 php7.4-pgsql php7.4-mysql php7.4-intl php7.4-json php7.4-mbstring
@@ -62,31 +68,43 @@ $ truncate table courses;
 $ php spark db:seed LoadSeeder
 ```
 
-## Access Web-App:
 
-_Admin: youremail@yourdomain.com
+## Access:
+
+_Admin: admin@gmail.com
+_Pass: Test1234
+
+_User: free@gmail.com
+_Pass: Test1234
+
+_User: vip@gmail.com
+_Pass: Test1234
 
 ## Technologies 🛠️
 
-* [CodeIgniter v4.2.10](https://codeigniter.com/user_guide/index.html) 
+* [CodeIgniter 4](https://codeigniter.com/user_guide/index.html)
+* [Email Tool](https://mailtrap.io?ref=jonathan61)  
 
-## Courses :movie_camera: 
-
-* [Youtube](https://www.youtube.com/channel/UCh7tHVI7ZmqJbJmpPlvl7HQ)
-* [Udemy](https://www.udemy.com/course/codeigniter-4-desarrollando-en-linux/?referralCode=9607DCD14D42AE5C29F9)    
 
 ## Author ✒️
 
-* **Jonathan Castro** - *Web Developer* - [jonathancastrodeveloper](https://github.com/jonathancastrodeveloper)
+* **Jonathan Castro** - *Software Engineer* - [joncastdev](https://github.com/joncastdev)
 
-## Contact :telephone_receiver:
 
-* [Discord](https://discord.gg/hzgXcPxkmq)
+## Support
 
-## Contact :mailbox:
+_joncastdev@gmail.com_
 
-_jonathancastro@opengiscrm.com_
+* If you would like a business forum with many extra features, please contact us with your requirements and budget. Thank you.
 
-## Donations 🎁
 
-* [Paypal](https://paypal.me/joncastroweb?locale.x=es_XC) - Thank you very much for your contribution.
+## Donations
+
+* [Paypal](https://www.paypal.com/paypalme/programadorjonathan) - Thank you very much for your contribution.
+
+* [Ko-Fi](https://ko-fi.com/foroworkers) - Thank you very much for your contribution.
+
+* [Patreon](https://www.patreon.com/c/foroworkers) - Thank you very much for your contribution.
+
+
+
