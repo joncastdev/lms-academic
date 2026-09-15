@@ -22,6 +22,18 @@
    </a>
  </li>
 
+ <li class="nav-item">
+    <a class="nav-link" href="/tutorials">       
+     <span class="text-dark">Cursos Gratis</span>
+   </a>
+ </li>
+
+  <li class="nav-item">
+    <a class="nav-link" href="/panel/certificates">       
+     <span class="text-dark">Certificados</span>
+   </a>
+ </li>
+
  <!--    divider -->
  <div class="topbar-divider d-none d-sm-block"></div>
 
@@ -62,10 +74,10 @@
 
       <!-- Dropdown - dropdown -->
       <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-        <!-- <a class="dropdown-item" href="<?php //echo base_url();?>login">
+        <a class="dropdown-item" href="/panel/profile">
           <i class="fas fa-fw fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>          
           Perfil
-        </a>  -->       
+        </a>        
         <a class="dropdown-item" href="/logout">
           <i class="fas fa-lock fa-sm fa-fw mr-2 text-gray-400"></i>
           <!-- <?php //echo lang('registrarse'); ?> -->

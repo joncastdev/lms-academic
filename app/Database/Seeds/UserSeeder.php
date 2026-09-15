@@ -9,6 +9,8 @@ class UserSeeder extends Seeder
 	public function run()
 	{
 
+		$this->db->table('users')->truncate();	
+
 		$email_admin = getenv('EMAIL_ADMIN');
 
 		$email_user = getenv('EMAIL_USER');

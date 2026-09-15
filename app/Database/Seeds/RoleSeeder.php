@@ -7,7 +7,9 @@ use CodeIgniter\Database\Seeder;
 class RoleSeeder extends Seeder
 {
 	public function run()
-	{       
+	{ 
+
+	$this->db->table('roles')->emptyTable();      
 
 		$data = [
 			[			

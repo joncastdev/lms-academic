@@ -278,6 +278,18 @@ class Login extends BaseController
 		// $last_name = $this->request->getPost('last_name');
 
 		$rules = [
+			'first_name' => [
+				'rules'  => 'required|min_length[3]',
+				'errors' => [
+					'required' => 'FirstName is required.'
+				]
+			],
+			'last_name' => [
+				'rules'  => 'required|min_length[3]',
+				'errors' => [
+					'required' => 'LastName is required.'
+				]
+			],
 			'password' => [
 				'rules'  => 'required|min_length[5]',
 				'errors' => [
@@ -310,9 +322,10 @@ class Login extends BaseController
 
 
 
-		if ($this->request->getPost('email') && $this->request->getPost('password') ) {
+		if ($this->request->getPost('email') && $this->request->getPost('password') && $this->request->getPost('first_name') && $this->request->getPost('last_name') ) {
 			# code...
-
+			$firstName = $this->request->getPost('first_name');
+			$lastName = $this->request->getPost('last_name');
 			$email = $this->request->getPost('email');
 			$password = $this->request->getPost('password');
 
@@ -333,13 +346,17 @@ class Login extends BaseController
 
 
 			$data = array(
-				'img' => 'user.png',			
+				'img' => 'user.png',
+				'first_name' => $firstName,	
+				'last_name' => $lastName,		
 				'email' => $email,
 				'password' => $hash,
 				'token' => $random_token,			
 				'id_role' => 2,
+				'id_country' => 1,
 				'id_statu' => 2,
-				'is_buyer' => 0				
+				'is_buyer' => 0,
+				'linkedin' => 'none'					
 			);
 
 

@@ -5,6 +5,76 @@
 
 <?php echo $this->section('content') ?>
 
+
+<style>
+  .c-dashboardInfo {
+  margin-bottom: 15px;
+}
+.c-dashboardInfo .wrap {
+  background: #ffffff;
+  box-shadow: 2px 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 7px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  padding: 40px 25px 20px;
+  height: 100%;
+}
+.c-dashboardInfo__title,
+.c-dashboardInfo__subInfo {
+  color: #6c6c6c;
+  font-size: 1.18em;
+}
+.c-dashboardInfo span {
+  display: block;
+}
+.c-dashboardInfo__count {
+  font-weight: 600;
+  font-size: 2.5em;
+  line-height: 64px;
+  color: #323c43;
+}
+.c-dashboardInfo .wrap:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  content: "";
+}
+
+.c-dashboardInfo:nth-child(1) .wrap:after {
+  background: linear-gradient(82.59deg, #00c48c 0%, #00a173 100%);
+}
+.c-dashboardInfo:nth-child(2) .wrap:after {
+  background: linear-gradient(81.67deg, #0084f4 0%, #1a4da2 100%);
+}
+.c-dashboardInfo:nth-child(3) .wrap:after {
+  background: linear-gradient(69.83deg, #0084f4 0%, #00c48c 100%);
+}
+.c-dashboardInfo:nth-child(4) .wrap:after {
+  background: linear-gradient(81.67deg, #ff647c 0%, #1f5dc5 100%);
+}
+.c-dashboardInfo__title svg {
+  color: #d7d7d7;
+  margin-left: 5px;
+}
+.MuiSvgIcon-root-19 {
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  font-size: 24px;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  user-select: none;
+  flex-shrink: 0;
+}
+.c-dashboardInfo{
+      width: 35%;
+}
+</style>
+
 <!-- <?php //echo $this->include('user/inc/navbar') ?> -->
 
 <?php echo $this->include('user/inc/navbar') ?>
@@ -65,44 +135,121 @@
 						<h1>Tu cuenta está activada</h1>
 
 						<p>Explora el catálogo de cursos</p>
-						<br>
-						<br>
-						<br>
-						<br>
-						<br>
-						<br>
-						<br>
-						<br>
-						<br>
-						<br>
-						<br>
-						<br>
-						<br>
-						<br>
-						<br>
-						<br>				
+
+						<!-- Main Wrapper -->
+
+						<!--End Top Nav -->
+
+						<!-- -------------------------------------------------- -->
+						<div id="root">
+							<div class="container pt-5">
+								<div class="row align-items-stretch">
+
+									<?php if($courses): ?>
+
+									<div class="c-dashboardInfo col-lg-3 col-md-6">
+									<!-- 	<a href="add_store.php" style="text-decoration: none;"> -->
+											<div class="wrap">
+												<h4 class="heading heading5 hind-font medium-font-weight c-dashboardInfo__title">Mis Cursos</h4><?php print_r($courses) ?><span class="hind-font caption-12 c-dashboardInfo__count">  <i class="bx bx-store"></i></span>
+											</div>
+										<!-- </a> -->
+									</div>
+
+									<?php endif; ?>	
+
+									<?php if($courses == null): ?>
+
+									<div class="c-dashboardInfo col-lg-3 col-md-6">
+									<!-- 	<a href="add_store.php" style="text-decoration: none;"> -->
+											<div class="wrap">
+												<h4 class="heading heading5 hind-font medium-font-weight c-dashboardInfo__title">Mis Cursos</h4>0<span class="hind-font caption-12 c-dashboardInfo__count">  <i class="bx bx-store"></i></span>
+											</div>
+										<!-- </a> -->
+									</div>
+
+									<?php endif; ?>	
+
+									<?php if($certificates): ?>
+
+									<div class="c-dashboardInfo col-lg-3 col-md-6">
+										<!-- <a href="add_products.php" style="text-decoration: none;"> -->
+											<div class="wrap">
+												<h4 class="heading heading5 hind-font medium-font-weight c-dashboardInfo__title">Mis Certificados</h4><?php print_r($certificates) ?><span class="hind-font caption-12 c-dashboardInfo__count">  <i class="bx bx-box"></i></span>
+											</div>
+										<!-- </a> -->
+										</div>
+
+										<?php endif; ?>
+
+										<?php if($certificates): ?>
+
+									<div class="c-dashboardInfo col-lg-3 col-md-6">
+										<a href="/panel/info" style="text-decoration: none;">
+											<div class="wrap">
+												<h4 class="heading heading5 hind-font medium-font-weight c-dashboardInfo__title">Mi Info</h4>Detalles<span class="hind-font caption-12 c-dashboardInfo__count">  <i class="bx bx-box"></i></span>
+											</div>
+										</a>
+										</div>
+
+										<?php endif; ?>
+
+
+									<?php if($certificates == null): ?>
+
+									<div class="c-dashboardInfo col-lg-3 col-md-6">
+										<!-- <a href="add_products.php" style="text-decoration: none;"> -->
+											<div class="wrap">
+												<h4 class="heading heading5 hind-font medium-font-weight c-dashboardInfo__title">Mis Certificados</h4>0<span class="hind-font caption-12 c-dashboardInfo__count">  <i class="bx bx-box"></i></span>
+											</div>
+										<!-- </a> -->
+										</div>
+
+										<?php endif; ?>		
+
+										
+										
+									</div>
+								</div>
+							</div>
+							<!-- ------------------------------------------------------------- -->
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>				
+
+						</div>
 
 					</div>
 
-				</div>
+
+				<?php endif; ?>
 
 
-			<?php endif; ?>
-			
+			</div>
+
+
+
+
+
+
 
 		</div>
-
-
-
-
-
-		
-
 	</div>
-</div>
 
 
-<?php echo $this->include('user/inc/footer') ?>
+	<?php echo $this->include('user/inc/footer') ?>
 
 
-<?php echo $this->endSection() ?>
+	<?php echo $this->endSection() ?>

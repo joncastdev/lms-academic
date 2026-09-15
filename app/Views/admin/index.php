@@ -91,7 +91,11 @@
 
         								<!-- <a id="excel" onclick="excelLeads()"><span class="btn btn-warning  btn-md">XLS</span></a> -->
 
-        							</div>                     
+        							</div> 
+
+                      <a href="users/promo" class="btn btn-info">Promo Users</a>
+                      <br>
+                      <a href="users/promo/guest" class="btn btn-secondary">Promo Guest</a>                    
 
         							<!--   <table id="users"class="table table-responsive table-hover table-borderless " > -->
 

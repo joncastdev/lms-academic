@@ -8,6 +8,11 @@ class PensumSeeder extends Seeder
 {
 	public function run()
 	{
+
+		$this->db->table('pensums')->truncate();
+		//cualquiera de los 2 metodos
+		// $this->db->table('pensums')->emptyTable();
+
 		$data = [
 			[			
 				'pensum' => 'Herramientas',
@@ -508,7 +513,362 @@ class PensumSeeder extends Seeder
 				'pensum' => 'CRUD Customers',
 				'video' => '202)yii2crud.mp4',
 				'id_course' => 4								
-			],					
+			],
+			[				
+				'pensum' => 'Instalar',
+				'video' => '1)newlaracomposer.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Estructura',
+				'video' => '2)newlaraestructura.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Controladores',
+				'video' => '3)newlaracontroller.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Database',
+				'video' => '4)newlaradb.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Eloquent',
+				'video' => '5)newlaraeloquent.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Parametros',
+				'video' => '6)newlaraparams.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Joins',
+				'video' => '7)newlarajoins.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Migraciones',
+				'video' => '8)newlaramigrations.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Factory',
+				'video' => '9)newlarafactory.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Logs',
+				'video' => '10)newlaralogs.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Headers',
+				'video' => '11)newlaraheaders.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Querys Eloquent',
+				'video' => '12)newartisanquerys.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Relaciones de Tablas',
+				'video' => '13)newlararelation.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Widget Parte 1',
+				'video' => '14)newlarawidget1.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Widget Parte 2',
+				'video' => '15)newlarawidgets2.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Widget Parte 3',
+				'video' => '16)newlarawidgets3.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'API Rest Laravel 9 y 10',
+				'video' => '1)instalar_laravel9end.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Rutas de una API',
+				'video' => '2)rutas_laravel9_end.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Controladores',
+				'video' => '3)controllers_laravel9_end.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Migraciones',
+				'video' => '4)migraciones_laravel9end.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Semillas',
+				'video' => '5)seeds_laravel9end.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Configurar Sanctum',
+				'video' => '6)sactum_laravel9end.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Peticiones Get',
+				'video' => '7)show_laravel_end.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Peticiones Post',
+				'video' => '8)post_laravel_end.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Peticiones Put',
+				'video' => '9)update_laravel_end.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Peticiones Delete',
+				'video' => '10)delete_laravel_end.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Joins',
+				'video' => '11)joins_laravel_end.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'API de Stripe',
+				'video' => '12)setstripelara9.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Peticiones Get con Stripe',
+				'video' => '13)stripegetlara9.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Peticiones Delete con Stripe',
+				'video' => '14)stripedeletelara9.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Usar Nodejs para la SPA',
+				'video' => '40)nodelara9.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Componentes en Vuejs',
+				'video' => '41)componentslara9.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Autenticando con Vue y Axios',
+				'video' => '42)authlara9.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'Consumir Servicios de la API',
+				'video' => '43)endpoinstlara9.mp4',
+				'id_course' => 5								
+			],
+			[				
+				'pensum' => 'CORS con Ejemplo',
+				'video' => '44)corslara9.mp4',
+				'id_course' => 5								
+			],			
+			[				
+				'pensum' => 'Instalar',
+				'video' => '1)cakeinstalarnew.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Database',
+				'video' => '2)cakedatabasenew.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Migraciones Parte 1',
+				'video' => '3)cakemigrationnew.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Migraciones Parte 2',
+				'video' => '4)cakemigrations2new.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Semillas',
+				'video' => '5)cakeseedsnew.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'CRUD',
+				'video' => '6)cakecrudnew.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Data de Prueba',
+				'video' => '7)caketestnew.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Autenticacion Parte 1',
+				'video' => '8)cakeauth1new.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Autenticacion Parte 2',
+				'video' => '9)cakeauth2new.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Autenticacion Parte 3',
+				'video' => '10)auth3new.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Rutas Parte 1',
+				'video' => '11)routes1new.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Rutas Parte 2',
+				'video' => '12)routes2new.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Mapas con Leaflet',
+				'video' => '13)mapnew.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Logearse',
+				'video' => '14)cakelogoutnew.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Semillas con Entidades',
+				'video' => '15)cakeauthseednew.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Excepciones',
+				'video' => '16)cakeexceptionsnew.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Stripe API',
+				'video' => '17)cakesetearstripenew.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Listar Customers',
+				'video' => '18)cakeallcustomersnew.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Show Customers',
+				'video' => '19)cakeshownew.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Delete Customers',
+				'video' => '20)cakedeletenew.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Mas sobre Seeders',
+				'video' => '40)cakemodseednew.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Insertar Users',
+				'video' => '41)cakeuseraddnew.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Autorizacion',
+				'video' => '42)cakeautorinew.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Politicas',
+				'video' => '43)cakepoliciesnew.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Retringir Acceso 403',
+				'video' => '44)cakeaccesnew.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Proyecto CRUD Relacional',
+				'video' => '200)cakemigrations.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Crear el CRUD',
+				'video' => '201)cakecrud.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Agregando la Data',
+				'video' => '202)cakeseeds.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Entidades y Relaciones',
+				'video' => '203)cakeentity.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Relacion Uno a Muchos y Muchos a Muchos',
+				'video' => '204)cakerelation.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Cakephp 4.4 lo Nuevo',
+				'video' => '100)newcake4.4.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Entendiendo el Scope',
+				'video' => '101)newcakeaprefix.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Actualizar proyectos de 4.3 a 4.4',
+				'video' => '102)newcakeupgrade.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Crear una API REST',
+				'video' => '103)newcakeapi.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Deploy Parte 1',
+				'video' => '30)newcakedeploy1.mp4',
+				'id_course' => 6								
+			],
+			[				
+				'pensum' => 'Deploy Parte 2',
+				'video' => '31)newcakedeploy2.mp4',
+				'id_course' => 6								
+			],														
 		];
 
 		$this->db->table('pensums')->insertBatch($data);

@@ -23,7 +23,7 @@
 
 				<a href="/" class="btn btn-info">Back</a>
 
-				<p class="bg-success">Verificar el email.</p>	
+				<p class="bg-success">Email verificado ingrese en la aplicacion.</p>	
 				
 
 			</div>

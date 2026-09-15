@@ -40,7 +40,15 @@
 
 			<a href="/" class="btn btn-light">Back</a>			
 
-			<?php echo form_open('create'); ?>			
+			<?php echo form_open('create'); ?>
+
+			<input type="text" name="first_name" placeholder="ejem: jonathan" class="form-control">
+			<!-- <div class="text-danger"><?php //echo form_error('email');  ?></div>  -->
+			<br>
+
+			<input type="text" name="last_name" placeholder="ejem: castro" class="form-control">
+			<!-- <div class="text-danger"><?php //echo form_error('email');  ?></div>  -->
+			<br>					
 
 			<input type="email" name="email" placeholder="email@gmail.com" class="form-control">
 			<!-- <div class="text-danger"><?php //echo form_error('email');  ?></div>  -->

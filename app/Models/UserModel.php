@@ -14,10 +14,12 @@ class UserModel extends Model
 	// protected $useSoftDeletes = true;
 
 	// si estos campos no se agregan no deja insertar en la tabla
-	protected $allowedFields = ['img','email','password', 'token', 'id_role','id_statu', 'is_buyer'];
+	protected $allowedFields = ['img','first_name', 'last_name','email','password', 'token', 'id_role','id_country','id_statu', 'is_buyer','linkedin'];
 
-	protected $validationRules = [		
-		'email' => 'required',
+	protected $validationRules = [
+		'first_name' => 'required',
+		'last_name' => 'required',
+		'email' => 'required',		
 		'password' => 'required'
 	];
 
@@ -28,7 +30,7 @@ class UserModel extends Model
 
  //    protected $deletedField  = 'deleted_at';
 
-					
+
 	
 
 }

@@ -1,0 +1,234 @@
+<?php
+
+namespace App\Controllers;
+
+use App\Traits\MiddlewareAuth;
+
+use App\Libraries\Fpdf;
+
+use CodeIgniter\API\ResponseTrait;
+
+class Graduates extends BaseController
+{
+
+	use MiddlewareAuth;
+
+	use ResponseTrait;
+
+	protected $session;
+
+	protected $db;
+
+	protected $pdf;
+
+	public function __construct()
+	{
+		
+		helper(['form', 'url']);
+
+		$this->session = \Config\Services::session();
+
+		$this->db = \Config\Database::connect();
+
+
+	}
+
+	public function index()
+	{
+		$data['tittle'] = 'Cursos de Programación - Graduados';
+
+		// $query = "SELECT  DISTINCT u.img, u.first_name, u.last_name, c.name, u.linkedin  FROM users as u                     
+		// left join users_courses as uc on u.id_user = uc.id_user
+		// left join courses as c on c.id_course = uc.id_course		
+		// where u.is_buyer = 1";
+
+
+		// $query = "SELECT u.img, u.first_name, u.last_name,c.name, u.linkedin  FROM users as u                     
+		// left join users_courses as uc on u.id_user = uc.id_user
+		// left join courses as c on c.id_course = uc.id_course		
+		// where u.is_buyer = 1 GROUP BY u.img, u.first_name,u.last_name, u.linkedin, c.name
+		// ";
+
+		$query = "SELECT  DISTINCT u.id_user, u.img, u.first_name, u.last_name, u.linkedin, co.country,co.lat, co.long FROM users as u
+		left join countrys as co on co.id_country = u.id_country	                     
+		left join users_courses as uc on u.id_user = uc.id_user
+		left join courses as c on c.id_course = uc.id_course		
+		where u.is_buyer = 1 and u.id_role = 2
+		";
+
+		// $query = "SELECT  DISTINCT u.id_user, u.img, u.first_name, u.last_name, u.linkedin
+		// {
+		// SELECT c.name FROM courses as c
+		// } as cursos 
+		// FROM users as u      
+		// ";
+
+		// subquerys
+		// https://www.mysqltutorial.org/mysql-subquery/
+		// https://sebhastian.com/mysql-operand-should-contain-1-column/
+
+		// $query = "SELECT * FROM users as u
+		// WHERE u.is_buyer = 1 
+		//  IN
+		// (SELECT * FROM courses as c);     
+		// ";
+
+
+
+		$result = $this->db->query($query);
+
+		// total de users
+		$data_users = $result->getResultObject();
+
+		// $id_user = $data_users[0]->id_user; 
+
+		// print_r($id_user);
+
+		// print_r($data_users);
+
+		// exit;
+
+			// print_r(count($data_courses));
+
+		$total_users = count($data_users);
+
+		$data['users'] = $data_users;
+
+		// $users = $data_users;
+
+		// $query2 = "SELECT c.name FROM users as u                     
+		// left join users_courses as uc on u.id_user = uc.id_user
+		// left join courses as c on c.id_course = uc.id_course		
+		// where u.is_buyer = 1 
+		// ";
+
+		// $result2 = $this->db->query($query2);
+
+		// // total de courses
+		// $data_users2 = $result2->getResultObject();
+
+		// $data['courses'] = $data_users2;
+
+
+			// print_r($data_users2);
+
+			// exit;
+
+		// $data['users'] = $total_users;
+
+
+
+		$query2 = "SELECT c.id_course,c.name FROM users as u
+		left join certificates as ce on ce.id_user = u.id_user                  
+		left join courses as c on c.id_course = ce.id_course			
+		where u.is_buyer = 1 and u.id_user = 'jose@gmail.com'";
+
+
+		$result2 = $this->db->query($query2);
+
+		$certificates = $result2->getResultObject();
+
+		// $data['certificates'] = $result2->getResultObject();
+
+		// print_r($certificate);
+
+		// print_r($data);
+
+		// // array_merge(array1)
+
+		// exit;
+
+		// $data = [
+		// 	'users'   => $users,
+		// 	'certificates' => $certificates,
+		// 	'tittle' => 'graduados',			
+		// ];
+
+
+		return view('graduates',$data);
+
+		// return view('graduates',[$data,$users,$certificates]);
+	}
+
+
+
+	public function select()
+	{
+
+		// $db      = \Config\Database::connect();
+		// $builder = $db->table('countrys');	
+
+		$country = $this->request->getGet('countryVal');
+
+		// $builder = $db->table('countrys AS A');
+		// $builder->select('B.id_state,B.state');
+		// $builder->join('states AS B', 'A.id_country = B.id_country');
+		// $builder->where('A.id_country', $country);
+		// $query = $builder->get()->getResult();	
+		// print_r($query);
+
+		// $query2 = "SELECT c.id_course,c.name FROM users as u
+		// left join certificates as ce on ce.id_user = u.id_user                  
+		// left join courses as c on c.id_course = ce.id_course			
+		// where u.is_buyer = 1 and u.id_user = '{$country}'";
+
+		$query2 = "SELECT c.id_course,c.name FROM users as u                     
+		left join users_courses as uc on u.id_user = uc.id_user
+		left join courses as c on c.id_course = uc.id_course		
+		where u.is_buyer = 1  and u.id_user = '{$country}'";
+
+
+		$result2 = $this->db->query($query2);
+
+		$query = $result2->getResultObject();
+
+	
+
+		// return $this->response->setJSON($country);
+
+			return $this->response->setJSON($query);
+		
+	}
+
+	public function mapall()
+	{
+		
+
+		// $email = $this->session->get('email');	
+
+		$email = 'james@example.org';
+
+		// $email = $this->request->getGet('email');
+		
+
+		// $query = "SELECT c.id_country,c.country,c.lat,c.long FROM users as u     
+		// left join users_leads as ul on u.id_user = ul.id_user
+		// left join leads as l on l.id_lead = ul.id_lead
+		// left join countrys as c on l.id_country = c.id_country		
+		// where u.email = '{$email}'";
+
+
+		$query = "SELECT co.country,co.lat, co.long FROM users as u
+		left join countrys as co on co.id_country = u.id_country	                     
+		left join users_courses as uc on u.id_user = uc.id_user
+		left join courses as c on c.id_course = uc.id_course		
+		where u.is_buyer = 1 
+		";
+
+		$result = $this->db->query($query);
+
+		$data = $result->getResultArray();
+
+		
+		// return $this->response->setJSON("test");
+		// return $this->response->setJSON($data);
+
+		return $this->respond($data)
+		->setHeader('Access-Control-Allow-Origin', '*');   
+		
+	}
+
+
+	
+	
+}
