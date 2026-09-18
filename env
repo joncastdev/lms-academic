@@ -44,7 +44,7 @@
 #--------------------------------------------------------------------
 
   database.default.hostname = localhost
-  database.default.database = opengiscrm_ci4
+  database.default.database = lmsacademic
   database.default.username = jonathan
   database.default.password = 123
   database.default.DBDriver = MySQLi
