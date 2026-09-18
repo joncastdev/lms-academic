@@ -1,9 +1,9 @@
 ## Introduction
 
-Laravel open source forum to manage online communities.
+Lms academic
 
 ## About
-A powerful Open Source Business Forum that can be installed on your server.Open source Laravel Forum
+A powerful lms academic online
 
 - Follow the creator Jonathan Castro:
     - YouTube: **[youtube.com/@joncastdev](https://youtube.com/@joncastdev)** — Videos every week
@@ -19,18 +19,24 @@ _These instructions will allow you to get a copy of the project running on your 
 
 ## Setup
 
-- PHP 7.4 <=
+- PHP 8.3 <=
 - PostgreSQL (Or MySQL)
 - [Composer](https://getcomposer.org/)
 
 ## Additional details on dependencies
 Assuming you're running Ubuntu, and then install all dependencies from the following list:
 
-sudo apt-get install php7.4 php7.4-pgsql php7.4-mysql php7.4-intl php7.4-json php7.4-mbstring
+sudo apt-get install php8.3 php8.3-pgsql php8.3-mysql php8.3-intl php8.3-json php8.3-mbstring
 
 ## Installation
 
 The following steps are meant to be used on a development server.
+
+- Composer
+
+```bash
+$ composer create-project joncastdev/lms-academic
+``` 
 
 
 - Clone Project
